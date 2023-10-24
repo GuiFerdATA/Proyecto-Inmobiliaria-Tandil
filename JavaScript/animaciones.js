@@ -19,6 +19,6 @@ window.sr =ScrollReveal();
     sr.reveal('.form-inline', {
         duration: 2500,
         origin:'bottom',
-        distance: '500px',
+        distance: '300px',
     });
     
