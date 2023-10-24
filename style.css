@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.contenedor_header {
+    background: transparent;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    position: fixed;
+}
+
+.contenedor_header header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#ffffff ;
+    
+
+}
+.logo_img img{
+    height: 50px;
+}
+.contenedor_header header nav ul {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.contenedor_header header nav ul li {
+    padding: 10px;
+    margin: 0px 10px;
+    border-radius: 20px;
+}
+
+.contenedor_header header nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(3, 0, 0);
+    font-size: 19px;
+}
+
+.nav-responsive {
+    color: transparent;
+    padding: 15px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/*SEC 1*/
+.inicio {
+    min-height: 100vh;
+    background-color:#ffffff;
+    position: relative;
+}
+svg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.1;
+}
+
+.contenido_inicio{
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+.contenido_inicio h1{
+    font-size: 70px;
+    font-family: 'Poppins', sans-serif;;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+}
+.inmobiliaria{
+    color: rgb(249, 183, 0);
+}
+
+.contenido_inicio a {
+    color:rgb(249, 183, 0);
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.contenido_inicio a:hover {
+color:rgb(249, 183, 0);
+}
+
+.form-inline{
+    display: flex;
+    margin-top: 50px;
+ }
