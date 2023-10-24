@@ -11,6 +11,9 @@
 html {
     scroll-behavior: smooth;
 }
+body{
+    overflow-x: hidden;
+ }
 
 .contenedor_header {
     background: transparent;
@@ -95,10 +98,12 @@ svg{
     letter-spacing: 0.05em;
     text-decoration: none;
 }
-.inmobiliaria{
+.spanInmobiliaria{
     color: rgb(249, 183, 0);
 }
-
+.spanTandil{
+    color: rgb(249, 183, 0);
+}
 .contenido_inicio a {
     color:rgb(249, 183, 0);
     margin-top: 30px;
@@ -112,4 +117,7 @@ color:rgb(249, 183, 0);
 .form-inline{
     display: flex;
     margin-top: 50px;
+    width: 50%;
+    margin-left: 300px;
+
  }
