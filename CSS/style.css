@@ -51,6 +51,8 @@ body{
     font-family: 'Poppins', sans-serif;
     color: rgb(3, 0, 0);
     font-size: 19px;
+    text-decoration: none;
+
 }
 
 .nav-responsive {
