@@ -11,9 +11,10 @@
 html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     overflow-x: hidden;
- }
+}
 
 .contenedor_header {
     background: transparent;
@@ -28,13 +29,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color:#ffffff ;
-    
+    background-color: #ffffff;
+
 
 }
-.logo_img img{
+
+.logo_img img {
     height: 50px;
 }
+
 .contenedor_header header nav ul {
     display: flex;
     align-items: center;
@@ -66,14 +69,16 @@ body{
 /*SEC 1*/
 .inicio {
     min-height: 100vh;
-    background-color:#ffffff;
+    background-color: #ffffff;
     position: relative;
 }
-svg{
+
+svg {
     position: absolute;
     bottom: 0;
     left: 0;
 }
+
 .capa {
     position: absolute;
     top: 0;
@@ -84,7 +89,7 @@ svg{
     opacity: 0.1;
 }
 
-.contenido_inicio{
+.contenido_inicio {
     padding-top: 200px;
     display: flex;
     flex-direction: column;
@@ -94,34 +99,114 @@ svg{
     position: relative;
     z-index: 2;
 }
-.contenido_inicio h1{
+
+.contenido_inicio h1 {
     font-size: 70px;
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
     letter-spacing: 0.05em;
     text-decoration: none;
 }
-.spanInmobiliaria{
+
+.spanInmobiliaria {
     color: rgb(249, 183, 0);
 }
-.spanTandil{
+
+.spanTandil {
     color: rgb(249, 183, 0);
 }
+
 .contenido_inicio a {
-    color:rgb(249, 183, 0);
+    color: rgb(249, 183, 0);
     margin-top: 30px;
     font-size: 40px;
     width: 100%;
-
 }
 
 .contenido_inicio a:hover {
-color:rgb(249, 183, 0);
+    color: rgb(249, 183, 0);
 }
 
-.form-inline{
+.form-inline {
     display: flex;
     margin-top: 50px;
     width: 50%;
     margin-left: 300px;
+}
 
- }
+/*NUESTRO OBJETIVO*/
+.contenido_objetivo {
+    scroll-margin: 3.5em;
+    background-color: #ffffff;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.contenido_objetivo svg {
+    position: absolute;
+    bottom: 56%;
+    left: 0;
+}
+
+.container_objetivo h2 {
+    margin-top: 130px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.05em;
+}
+
+.spanObjetivo {
+    color: rgb(249, 183, 0);
+}
+
+.container_derObjetivos {
+    background-color:rgb(195, 150, 25) ;
+    width: 50%;
+    height: 50%;
+    float: right;
+}
+
+.container_izqObjetivos {
+    background-color: #1AA3FF;
+    width: 50%;
+    height: 50%;
+    margin-top: 150px;
+    margin-left: 25px;
+    text-align: center;
+}
+
+
+.container_izqObjetivos  h3 {
+    font-size: 50px;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.003em;
+    color: #1E2D3B;
+    text-align: center;
+}
+
+.container_izqObjetivos  p {
+    font-size: 25px;
+    margin-top: 90px;
+    letter-spacing: 0.03em;
+    color: #1E2D3B;
+}
+
+.container_derObjetivos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 25px;
+    flex-direction: column;
+}
+
+.container_derObjetivos p {
+    font-size: 25px;
+    margin-bottom:90px;
+    letter-spacing: 0.03em;
+    color: #1E2D3B;
+    width: 50%;
+}
+
