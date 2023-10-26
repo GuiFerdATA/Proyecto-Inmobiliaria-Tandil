@@ -1,6 +1,6 @@
 const $enlacesMenu = document.querySelectorAll('.contenedor_header ul li')
 const $btnDown = document.querySelector('.contenido_secPrincipal a')
-
+const $rediNuesObj = document.getElementById('#nuestroObjetivo')
 
 $enlacesMenu.forEach((items) => {
     items.addEventListener('mouseenter', () => {
@@ -12,7 +12,7 @@ $enlacesMenu.forEach((items) => {
 });
 
 
-$btnDown.forEach((itemDown) =>{
+$rediNuesObj.forEach((itemDown) =>{
     itemDown.addEventListener('mouseenter', () => {
         itemDown.style.display = 'nonee'
     })

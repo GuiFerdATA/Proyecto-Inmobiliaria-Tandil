@@ -244,7 +244,7 @@ body {
 /*PORTAL*/
 .contenido_portal {
     scroll-margin: 4.0em;
-    min-height: 100VH;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
