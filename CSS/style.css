@@ -187,11 +187,13 @@ body {
 
 
 .container_izqObjetivos h3 {
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'Outfit', sans-serif;
-    letter-spacing: 0.05em;
-    color: #1E2D3B;
+    
     text-align: center;
+}
+.obje{
+    color:rgb(249, 183, 0);
 }
 
 .container_izqObjetivos p {
@@ -229,16 +231,18 @@ body {
 }
 
 .btn_downTree {
-    color: rgb(249, 183, 0);
+    color: #198754;
     margin-top: 30px;
-    font-size: 40px;
-
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
 }
-
+.btn_downTree>i{
+    font-size: 50px;
+}
 .btn_downTree:hover {
-    color: rgb(249, 183, 0);
-
-
+    color: #198754;
 }
 
 /*PORTAL*/
@@ -252,12 +256,7 @@ body {
 }
 .svg4{
     position: absolute;
-    bottom: 56%;
+    bottom: 0;
     left: 0;
 
-}
-.svg5{
-position: absolute;
-bottom: 0;
-left: 0;
 }
