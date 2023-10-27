@@ -51,8 +51,7 @@ body {
 
 .contenedor_header header nav ul li {
     padding: 10px;
-    margin: 0px 8px;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .contenedor_header header nav ul li a {
@@ -60,6 +59,8 @@ body {
     color: rgb(0, 0, 0);
     font-size: 18px;
     text-decoration: none;
+    padding: 8px;
+    border-radius: 20px;
 }
 
 .nav-responsive {
@@ -231,15 +232,15 @@ body {
 }
 
 .btn_downTree {
-    color: #198754;
-    margin-top: 30px;
-    font-size: 20px;
+    color: #0099ff;
+    margin-top: 25px;
+    font-size: 15px;
     text-decoration: none;
     display: flex;
     flex-direction: column;
 }
 .btn_downTree>i{
-    font-size: 50px;
+    font-size: 35px;
 }
 .btn_downTree:hover {
     color: #198754;

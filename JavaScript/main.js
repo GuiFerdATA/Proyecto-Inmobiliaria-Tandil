@@ -1,4 +1,4 @@
-const $enlacesMenu = document.querySelectorAll('.contenedor_header ul li')
+const $enlacesMenu = document.querySelectorAll('.contenedor_header ul li a')
 const $btnDown = document.querySelector('.contenido_secPrincipal a')
 const $rediNuesObj = document.getElementById('#nuestroObjetivo')
 
