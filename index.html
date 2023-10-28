@@ -12,85 +12,87 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-
 </head>
-
-
-    <div class="contenedor_header">
-        <header>
-            <div class="logo_img">
-                <img src="./IMG/logo_nav.jpg" alt="logo">
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#nuestrosObjetivos">Nuestro objetivo</a></li>
-                    <li><a href="./pages/portal.html" >Portal</a></li>
-                    <li><a href="#" >Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="nav-responsive">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
+<div class="contenedor_header">
+    <header>
+        <div class="logo_img">
+            <img src="./IMG/logo_nav.jpg" alt="logo">
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#nuestrosObjetivos">Nuestro objetivo</a></li>
+                <li><a href="./pages/portal.html">Portal</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="nav-responsive">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+</div>
+<div id="loader"></div>
+<section class="inicio" id="#inicio">
+    <svg class="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#0099ff" fill-opacity="1"
+            d="M0,288L120,293.3C240,299,480,309,720,261.3C960,213,1200,107,1320,53.3L1440,0L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+        </path>
+    </svg>
+    <div class="contenido_inicio">
+        <h1> <span class="spanInmobiliaria">Portal </span> <span> <br> inmobiliario</span> <br> <span
+                class="spanTandil">Tandil</span> </h1>
+        <a href="#nuestrosObjetivos" class="btn_down"><i class="fa-solid fa-angle-down fa-fade"></i></a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search"
+                placeholder="Inicia tu búsqueda, ejemplo: 'Casa 2 dormitorios con patio' " aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Busqueda</button>
+        </form>
+        <a href="#nuestrosObjetivos" class="btn_downTwo"><i class="fa-solid fa-angles-down fa-bounce"></i></a>
     </div>
+    <div class="capa"></div>
+</section>
+<!--Nuestro Objetivo-->
+<section class="contenido_objetivo" id="nuestrosObjetivos">
+    <svg class="svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#1AA3FF" fill-opacity="1"
+            d="M0,32L120,32C240,32,480,32,720,53.3C960,75,1200,117,1320,138.7L1440,160L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
+        </path>
+    </svg>
+    <div class="container_objetivo">
+        <h2 class="h2">Nuestro <span class="spanObjetivo">objetivo</span></h2>
+        <div class="container_derObjetivos">
+            <p class="parrafoObjetivo"> Ya sea que estés buscando una casa, un departamento, un terreno o una
+                propiedad comercial, aquí encontrarás una amplia variedad de opciones.
 
-    <section class="inicio" id="#inicio">
-        <svg class="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#0099ff" fill-opacity="1"
-                d="M0,288L120,293.3C240,299,480,309,720,261.3C960,213,1200,107,1320,53.3L1440,0L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
-            </path>
-        </svg>
-        <div class="contenido_inicio">
-            <h1> <span class="spanInmobiliaria">Portal </span> <span> <br> inmobiliario</span> <br> <span
-                    class="spanTandil">Tandil</span> </h1>
-            <a href="#nuestrosObjetivos" class="btn_down"><i class="fa-solid fa-angle-down fa-fade"></i></a>
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search"
-                    placeholder="Inicia tu búsqueda, ejemplo: 'Casa 2 dormitorios con patio' " aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Busqueda</button>
-            </form>
-            <a href="#nuestrosObjetivos" class="btn_downTwo"><i class="fa-solid fa-angles-down fa-bounce"></i></a>
+                En [Nombre de tu portal], trabajamos con pasión para simplificar tu proceso de búsqueda, brindándote
+                información detallada y actualizada. Nuestro compromiso es convertir tus sueños inmobiliarios en
+                realidad.
+
+                Bienvenido a la forma más fácil de encontrar tu lugar en Tandil.</p>
+            <a href="./pages/portal.html" class="btn_downTree "><i
+                    class="fa-solid fa-person-through-window fa-bounce"></i>¡Ingresa!</a>
+
         </div>
-        <div class="capa"></div>
-    </section>
-    <!--Nuestro Objetivo-->
-    <section class="contenido_objetivo" id="nuestrosObjetivos">
-        <svg class="svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#1AA3FF" fill-opacity="1"
-                d="M0,32L120,32C240,32,480,32,720,53.3C960,75,1200,117,1320,138.7L1440,160L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
-            </path>
-        </svg>
-        <div class="container_objetivo">
-            <h2 class="h2">Nuestro <span class="spanObjetivo">objetivo</span></h2>
-            <div class="container_derObjetivos">
-                <p class="parrafoObjetivo"> Ya sea que estés buscando una casa, un departamento, un terreno o una
-                    propiedad comercial, aquí encontrarás una amplia variedad de opciones.
-
-                    En [Nombre de tu portal], trabajamos con pasión para simplificar tu proceso de búsqueda, brindándote
-                    información detallada y actualizada. Nuestro compromiso es convertir tus sueños inmobiliarios en
-                    realidad.
-
-                    Bienvenido a la forma más fácil de encontrar tu lugar en Tandil.</p>
-                <a href="./pages/portal.html" class="btn_downTree "><i class="fa-solid fa-person-through-window fa-bounce"></i>¡Ingresa!</a>
-
-            </div>
-            <div class="container_izqObjetivos">
-                <h3 class="h3"> <span class="obje">Ayud</span><span class="tivo">arte</span></h3>
-                <p class="parraforIzqProfesionales">Somos tu puerta de entrada al fascinante mundo de las propiedades en Tandil. Nuestra misión es sencilla: hacerte la búsqueda de tu próximo hogar o inversión inmobiliaria más fácil. Nos enorgullece reunir todas las ofertas de esta hermosa ciudad en un solo lugar, brindándote una forma eficiente y conveniente de explorarlas.</p>
-            </div>
+        <div class="container_izqObjetivos">
+            <h3 class="h3"> <span class="obje">Ayud</span><span class="tivo">arte</span></h3>
+            <p class="parraforIzqProfesionales">Somos tu puerta de entrada al fascinante mundo de las propiedades en
+                Tandil. Nuestra misión es sencilla: hacerte la búsqueda de tu próximo hogar o inversión inmobiliaria más
+                fácil. Nos enorgullece reunir todas las ofertas de esta hermosa ciudad en un solo lugar, brindándote una
+                forma eficiente y conveniente de explorarlas.</p>
         </div>
-        <svg class="svg3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#0099ff" fill-opacity="1"
-                d="M0,288L80,266.7C160,245,320,203,480,208C640,213,800,267,960,293.3C1120,320,1280,320,1360,320L1440,320L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-            </path>
-        </svg>
+    </div>
+    <svg class="svg3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#0099ff" fill-opacity="1"
+            d="M0,288L80,266.7C160,245,320,203,480,208C640,213,800,267,960,293.3C1120,320,1280,320,1360,320L1440,320L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+        </path>
+    </svg>
 
-    </section>
-  
+</section>
 
-    <script src="./JavaScript/main.js"></script>
-    <script src="./JavaScript/animaciones.js"></script>
-    </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="./JavaScript/main.js"></script>
+<link src="./JavaScript/animaciones.js"></link>
+</body>
+
 
 </html>
