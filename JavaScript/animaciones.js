@@ -51,4 +51,5 @@ window.sr =ScrollReveal();
         duration: 3000,
         opacity: 0,
     });
+
     
