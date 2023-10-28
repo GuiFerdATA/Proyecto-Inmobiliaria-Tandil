@@ -252,14 +252,15 @@ body {
     justify-content: center;
     position: relative;
     flex-wrap: wrap;
+    padding: 50px;
     margin-top: 50px;
 }
 .card{
     text-align: center;
-    margin: 0px 5px;
+    margin: 0px 10px;
     transition: all 0.3s ease-in-out;
-    height: 0%;
-    margin-top: 15px;
+    height: 5%;
+    margin-bottom: 30px;
 }
 .card:hover{
     transform: scale(1.03)
@@ -269,3 +270,5 @@ body {
     bottom:0px;
     left: 0;
 }
+
+
