@@ -188,14 +188,13 @@ body {
 
 
 .container_izqObjetivos h3 {
-    font-size: 60px;
+    font-size: 40px;
     font-family: 'Outfit', sans-serif;
-    
+    letter-spacing: 0.2em;
+    color: #198754;
     text-align: center;
 }
-.obje{
-    color:rgb(249, 183, 0);
-}
+
 
 .container_izqObjetivos p {
     font-size: 20px;
@@ -248,16 +247,25 @@ body {
 
 /*PORTAL*/
 .contenido_portal {
-    scroll-margin: 4.0em;
     min-height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
     position: relative;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.card{
+    text-align: center;
+    margin: 0px 5px;
+    transition: all 0.3s ease-in-out;
+    height: 0%;
+    margin-top: 15px;
+}
+.card:hover{
+    transform: scale(1.03)
 }
 .svg4{
     position: absolute;
-    bottom: 0;
+    bottom:0px;
     left: 0;
-
 }
