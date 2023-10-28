@@ -47,3 +47,8 @@ window.sr =ScrollReveal();
         distance: '250px',
         reset: true,
     });
+    sr.reveal('.contenido_portal', {
+        duration: 3000,
+        opacity: 0,
+    });
+    
