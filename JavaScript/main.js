@@ -9,16 +9,16 @@ const $rediNuesObj = document.getElementById('#nuestroObjetivo')
 
 
 
-/*carga de pagina */ 
-window.addEventListener('load', function() {
-  setTimeout(function() {
-    document.getElementById('loader').style.display = 'none';
-  }, 300);
+/*carga de pagina */
+window.addEventListener('load', function () {
+    setTimeout(function () {
+        document.getElementById('loader').style.display = 'none';
+    }, 300);
 });
-window.addEventListener('load', function() {
-  setTimeout(function() {
-    document.getElementById('loader2').style.display = 'none';
-  }, 600);
+window.addEventListener('load', function () {
+    setTimeout(function () {
+        document.getElementById('loader2').style.display = 'none';
+    }, 600);
 });
 
 
@@ -46,21 +46,55 @@ $formBusqueda.addEventListener("submit", async (event) => {
         alert("No se encontraron propiedades que coincidan con la búsqueda.");
     } else {
         // Accede a la ventana llamada "resultados" si ya está abierta o crea una nueva
-        const ventanaResultados = window.open('resultados.html', 'resultados');
+        const ventanaResultados = window.open('/resultados.html');
 
         // Espera a que se cargue el contenido de la ventana
-        ventanaResultados.onload = function() {
-            const resultadosHTML = propiedadesFiltradas.map(propiedad => `
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">${propiedad.titulo}</h5>
-                        <p class="card-text">Tipo: ${propiedad.tipo}</p>
-                        <p class="card-text">Habitaciones: ${propiedad.habitaciones}</p>
-                        <p class="card-text">Baños: ${propiedad.baños}</p>
-                        <p class="card-text">Precio: ${propiedad.precio}</p>
-                        <p class="card-text">Patio: ${propiedad.patio ? "Sí" : "No"}</p>
+        ventanaResultados.onload = function () {
+
+
+
+
+            const resultadosHTML = propiedadesFiltradas.map(propiedad => `              
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+                </head>
+                 
+                    <div class="contenedor_header">
+                        <header>
+                            <div class="logo_img">
+                            <img src="./IMG/logo_nav.jpg" alt="logo">
                     </div>
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="#nuestrosObjetivos">Nuestro objetivo</a></li>
+                            <li><a href="./pages/portal.html">Portal</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-responsive">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </header>
                 </div>
+                <body id="body_resultados">
+                   <div id="resultadoBusqueda">
+                   <div class="card mb-3">
+                   <div class="card-body">
+                       <h5 class="card-title">${propiedad.titulo}</h5>
+                       <p class="card-text">Tipo: ${propiedad.tipo}</p>
+                       <p class="card-text">Habitaciones: ${propiedad.habitaciones}</p>
+                       <p class="card-text">Baños: ${propiedad.baños}</p>
+                       <p class="card-text">Precio: ${propiedad.precio}</p>
+                       <p class="card-text">Patio: ${propiedad.patio ? "Sí" : "No"}</p>
+                   </div>
+               </div>
+                   </div>
+                </body>
             `).join('');
 
             // Inserta el contenido HTML en la ventana "resultados"

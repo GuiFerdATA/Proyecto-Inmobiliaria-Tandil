@@ -284,20 +284,35 @@ body {
     background: url('../IMG/carga.gif') 50% 50% no-repeat rgb(249,249,249);
     opacity: 0.9;
 }
-.card{
-    text-align: center;
-    margin: 0px 10px;
-    transition: all 0.3s ease-in-out;
-    height: 5%;
-    margin-bottom: 30px;
-}
-.card:hover{
-    transform: scale(1.03)
-}
+
 .svg4{
     position: absolute;
     bottom:0px;
     left: 0;   
 }
 
+/*SECCION BUSQUEDA*/
 
+#resultadoBusqueda{
+    background-color: red;
+    width: 100%;
+
+}
+
+#body_resultados{
+    min-height: 100vh;
+    display: flex;
+}
+.card-body{
+    background-color: antiquewhite;
+ }
+
+.card{
+    text-align: center;
+}
+.card-title{
+font-size: 15px;
+}
+.card-text{
+    font-size: 12px;
+}
