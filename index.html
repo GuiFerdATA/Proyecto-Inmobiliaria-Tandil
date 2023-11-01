@@ -8,11 +8,11 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Proyecto Web Javascript</title>
-    <script src="./JavaScript/scrollreveal.js"></script>
     <link rel="stylesheet" href="./CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 </head>
+<!--nav-->
 <div class="contenedor_header">
     <header>
         <div class="logo_img">
@@ -31,7 +31,9 @@
         </div>
     </header>
 </div>
+<!--loader-->
 <div id="loader"></div>
+<!--seccion inicio-->
 <section class="inicio" id="#inicio">
     <svg class="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#0099ff" fill-opacity="1"
@@ -42,14 +44,14 @@
         <h1> <span class="spanInmobiliaria">Portal </span> <span> <br> inmobiliario</span> <br> <span
                 class="spanTandil">Tandil</span> </h1>
         <a href="#nuestrosObjetivos" class="btn_down"><i class="fa-solid fa-angle-down fa-fade"></i></a>
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search"
+        <form class="form-inline" id="formBusqueda">
+            <input class="form-control mr-sm-2" id="inputBusqueda" type="text"
                 placeholder="Inicia tu búsqueda, ejemplo: 'Casa 2 dormitorios con patio' " aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Busqueda</button>
         </form>
+
         <a href="#nuestrosObjetivos" class="btn_downTwo"><i class="fa-solid fa-angles-down fa-bounce"></i></a>
     </div>
-    <iframe id="resultadoIframe" src="./pages/resultados.html"></iframe>
 
     <div class="capa"></div>
 </section>
@@ -86,9 +88,15 @@
     </svg>
 
 </section>
-<script type="module" src="./JavaScript/main.js"></script>
-<script type="module" src="./JavaScript/propiedades.js"></script>
+
+
+<!--scripts-->
+
+
+<script src="./JavaScript/scrollreveal.js"></script>
 <script src="./JavaScript/animaciones.js"></script>
+<script type="module" src="./JavaScript/propiedades.js"></script>
+<script type="module" src="./JavaScript/main.js"></script>
 </body>
 
 
