@@ -42,27 +42,15 @@ $formBusqueda.addEventListener("submit", async (event) => {
     const propiedadesFiltradas = await buscarPropiedades(terminoBusqueda);
 
     if (propiedadesFiltradas.length === 0) {
-        // Si no se encontraron propiedades, muestra un mensaje o maneja la falta de resultados como prefieras
+        // Si no se encontraron propiedades
         alert("No se encontraron propiedades que coincidan con la búsqueda.");
     } else {
-        // Accede a la ventana llamada "resultados" si ya está abierta o crea una nueva
+        // Accede a la ventana llamada "resultados"
         const ventanaResultados = window.open('/resultados.html');
 
         // Espera a que se cargue el contenido de la ventana
         ventanaResultados.onload = function () {
-
-
-
-
             const resultadosHTML = propiedadesFiltradas.map(propiedad => `              
-                <!DOCTYPE html>
-                <html lang="en">
-                <head>
-                    <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Document</title>
-                </head>
-                 
                     <div class="contenedor_header">
                         <header>
                             <div class="logo_img">
@@ -103,14 +91,15 @@ $formBusqueda.addEventListener("submit", async (event) => {
     }
 });
 
-async function buscarPropiedades(termino) {
-    // Filtrar propiedades basadas en el término de búsqueda
-    const propiedadesFiltradas = propiedades.filter(propiedad => {
-        return propiedad.titulo.toLowerCase().includes(termino);
+function buscarPropiedades(termino) {
+    return propiedades.filter(propiedad => {
+        return (
+            propiedad.titulo.toLowerCase().includes(termino) ||
+            propiedad.tipo.toLowerCase().includes(termino)
+        );
     });
-
-    return propiedadesFiltradas;
 }
+
 
 
 

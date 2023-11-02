@@ -11,7 +11,7 @@ const propiedades = [
     {
         id: 2,
         tipo: 'Departamento',
-        titulo: 'Departamento con cocina, comedor y 4 habitaciones',
+        titulo: 'Departamento con cocina comedor y 4 habitaciones',
         habitaciones: 4,
         baños: 1,
         patio: false,
