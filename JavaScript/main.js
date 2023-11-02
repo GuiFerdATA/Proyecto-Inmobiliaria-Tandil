@@ -35,18 +35,18 @@ $enlacesMenu.forEach((items) => {
 /* filtrado de búsquedo */
 const $formBusqueda = document.getElementById('formBusqueda');
 
-$formBusqueda.addEventListener("submit", async (event) => {
+$formBusqueda.addEventListener("submit", (event) => {
     event.preventDefault();
 
     const terminoBusqueda = document.getElementById('inputBusqueda').value.toLowerCase();
-    const propiedadesFiltradas = await buscarPropiedades(terminoBusqueda);
+    const propiedadesFiltradas = buscarPropiedades(terminoBusqueda);
 
     if (propiedadesFiltradas.length === 0) {
         // Si no se encontraron propiedades
         alert("No se encontraron propiedades que coincidan con la búsqueda.");
     } else {
         // Accede a la ventana llamada "resultados"
-        const ventanaResultados = window.open('/resultados.html');
+        const ventanaResultados = window.open('./resultados.html');
 
         // Espera a que se cargue el contenido de la ventana
         ventanaResultados.onload = function () {
@@ -59,7 +59,6 @@ $formBusqueda.addEventListener("submit", async (event) => {
                     <nav id="nav">
                         <ul>
                             <li><a href="../index.html">Inicio</a></li>
-                            <li><a href="#nuestrosObjetivos">Nuestro objetivo</a></li>
                             <li><a href="./pages/portal.html">Portal</a></li>
                             <li><a href="#">Contacto</a></li>
                         </ul>
