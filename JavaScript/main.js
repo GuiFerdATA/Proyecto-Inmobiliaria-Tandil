@@ -59,7 +59,7 @@ $formBusqueda.addEventListener("submit", (event) => {
                         </div>
                         <nav id="nav">
                             <ul>
-                                <li><a href="../index.html">Inicio</a></li>
+                                <li><a href="./index.html">Inicio</a></li>
                                 <li><a href="./pages/portal.html">Portal</a></li>
                                 <li><a href="#">Contacto</a></li>
                             </ul>
