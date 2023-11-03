@@ -4,12 +4,11 @@ import propiedades from "./propiedades.js";
 
 /* variables */
 const $enlacesMenu = document.querySelectorAll('.contenedor_header ul li a')
-const $btnDown = document.querySelector('.contenido_secPrincipal a')
-const $rediNuesObj = document.getElementById('#nuestroObjetivo')
+const $formBusqueda = document.getElementById('formBusqueda');
 
 
 
-/*carga de pagina */
+/*carga de pagina*/
 window.addEventListener('load', function () {
     setTimeout(function () {
         document.getElementById('loader').style.display = 'none';
@@ -20,6 +19,7 @@ window.addEventListener('load', function () {
         document.getElementById('loader2').style.display = 'none';
     }, 600);
 });
+/*fin carga pagina*/
 
 
 /* hover nav */
@@ -31,10 +31,11 @@ $enlacesMenu.forEach((items) => {
         items.style.backgroundColor = ''
     })
 });
+/*fin hover nav*/
+
+
 
 /* filtrado de búsquedo */
-const $formBusqueda = document.getElementById('formBusqueda');
-
 $formBusqueda.addEventListener("submit", (event) => {
     event.preventDefault();
 
@@ -105,7 +106,7 @@ function buscarPropiedades(termino) {
         );
     });
 }
-
+/*fin filtrado de búsquedo*/
 
 
 
