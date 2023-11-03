@@ -50,37 +50,38 @@ $formBusqueda.addEventListener("submit", (event) => {
 
         // Espera a que se cargue el contenido de la ventana
         ventanaResultados.onload = function () {
-            const resultadosHTML = propiedadesFiltradas.map(propiedad => `              
-                    <div class="contenedor_header">
-                        <header>
-                            <div class="logo_img">
+            const resultadosHTML = propiedadesFiltradas.map(propiedad => `
+                <div class="contenedor_header">
+                    <header>
+                        <div class="logo_img">
                             <img src="./IMG/logo_nav.jpg" alt="logo">
-                    </div>
-                    <nav id="nav">
-                        <ul>
-                            <li><a href="../index.html">Inicio</a></li>
-                            <li><a href="./pages/portal.html">Portal</a></li>
-                            <li><a href="#">Contacto</a></li>
-                        </ul>
-                    </nav>
-                    <div class="nav-responsive">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                </header>
+                        </div>
+                        <nav id="nav">
+                            <ul>
+                                <li><a href="../index.html">Inicio</a></li>
+                                <li><a href="./pages/portal.html">Portal</a></li>
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+                        </nav>
+                        <div class="nav-responsive">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </header>
                 </div>
                 <body id="body_resultados">
-                   <div id="resultadoBusqueda">
-                   <div class="card mb-3">
-                   <div class="card-body">
-                       <h5 class="card-title">${propiedad.titulo}</h5>
-                       <p class="card-text">Tipo: ${propiedad.tipo}</p>
-                       <p class="card-text">Habitaciones: ${propiedad.habitaciones}</p>
-                       <p class="card-text">Baños: ${propiedad.baños}</p>
-                       <p class="card-text">Precio: ${propiedad.precio}</p>
-                       <p class="card-text">Patio: ${propiedad.patio ? "Sí" : "No"}</p>
-                   </div>
-               </div>
-                   </div>
+                    <div id="resultadoBusqueda">
+                        <div class="card">
+                            <img src="${propiedad.img}" alt="${propiedad.titulo}">
+                            <div class="card-body">
+                                <h5 class="card-title">${propiedad.titulo}</h5>
+                                <p class="card-text">Tipo: ${propiedad.tipo}</p>
+                                <p class="card-text">Habitaciones: ${propiedad.habitaciones}</p>
+                                <p class="card-text">Baños: ${propiedad.baños}</p>
+                                <p class="card-text">Precio: ${propiedad.precio}</p>
+                                <p class="card-text">Patio: ${propiedad.patio ? "Sí" : "No"}</p>
+                            </div>
+                        </div>
+                    </div>
                 </body>
             `).join('');
 
@@ -94,7 +95,7 @@ function buscarPropiedades(termino) {
     return propiedades.filter(propiedad => {
         return (
             propiedad.titulo.toLowerCase().includes(termino) ||
-            propiedad.tipo.toLowerCase().includes(termino)
+            propiedad.tipo.toLowerCase().includes(termino)   
         );
     });
 }
