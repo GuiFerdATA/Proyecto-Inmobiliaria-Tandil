@@ -6,7 +6,7 @@ const propiedades = [
         habitaciones: 3,
         baños: 2,
         patio: true,
-        img: "/IMG/portada.jpeg",
+        img: "./IMG/portada.jpeg",
         precio: 160000
     },
     {
@@ -16,7 +16,7 @@ const propiedades = [
         habitaciones: 4,
         baños: 1,
         patio: false,
-        img: "/IMG/portada.jpeg",
+        img: "./IMG/portada.jpeg",
         precio: 120000
     },
     {
@@ -176,7 +176,7 @@ const propiedades = [
         habitaciones: 3,
         baños: 1,
         patio: false,
-        img: "/IMG/portada.jpeg",
+        img: "./IMG/portada.jpeg",
         precio: 120000
       },
 ]
