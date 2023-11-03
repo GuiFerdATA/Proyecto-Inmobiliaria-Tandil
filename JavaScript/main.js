@@ -45,10 +45,11 @@ $formBusqueda.addEventListener("submit", (event) => {
         // Si no se encontraron propiedades
         alert("No se encontraron propiedades que coincidan con la búsqueda.");
     } else {
-        // Accede a la ventana llamada "resultados"
+        // Abrir una nueva ventana y guardar una referencia a la ventana actual
+        const ventanaActual = window;
         const ventanaResultados = window.open('./resultados.html');
 
-        // Espera a que se cargue el contenido de la ventana
+        // Esperar a que se cargue el contenido de la ventana de resultados
         ventanaResultados.onload = function () {
             const resultadosHTML = propiedadesFiltradas.map(propiedad => `
                 <div class="contenedor_header">
@@ -85,8 +86,13 @@ $formBusqueda.addEventListener("submit", (event) => {
                 </body>
             `).join('');
 
-            // Inserta el contenido HTML en la ventana "resultados"
+            // Insertar el contenido HTML en la ventana de resultados
             ventanaResultados.document.body.innerHTML = resultadosHTML;
+
+            // Cerrar la ventana anterior (ventana actual) después de un tiempo para dar tiempo a cargar la nueva ventana
+            setTimeout(function () {
+                ventanaActual.close();
+            }, 1);
         };
     }
 });
@@ -99,7 +105,6 @@ function buscarPropiedades(termino) {
         );
     });
 }
-
 
 
 
