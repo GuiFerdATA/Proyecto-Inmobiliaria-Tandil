@@ -19,6 +19,7 @@ html {
 body {
     overflow-x: hidden;
 }
+
 #loader {
     position: fixed;
     top: 0;
@@ -30,9 +31,10 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    background: url('../IMG/carga.gif') 50% 50% no-repeat rgb(249,249,249);
+    background: url('../IMG/carga.gif') 50% 50% no-repeat rgb(249, 249, 249);
 
 }
+
 #loader2 {
     position: fixed;
     top: 0;
@@ -44,9 +46,10 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    background: url('../IMG/carga.gif') 50% 50% no-repeat rgb(249,249,249);
+    background: url('../IMG/carga.gif') 50% 50% no-repeat rgb(249, 249, 249);
     opacity: 0.9;
 }
+
 .contenedor_header {
     background: transparent;
     width: 100%;
@@ -207,7 +210,7 @@ body {
     margin-top: 100px;
     margin-left: 25px;
     text-align: center;
-    
+
 }
 
 
@@ -262,9 +265,11 @@ body {
     display: flex;
     flex-direction: column;
 }
-.btn_downTree>i{
+
+.btn_downTree>i {
     font-size: 35px;
 }
+
 .btn_downTree:hover {
     color: #198754;
 }
@@ -281,11 +286,50 @@ body {
 }
 
 
-.svg4{
+.svg4 {
     position: absolute;
-    bottom:0px;
-    left: 0;   
+    bottom: 0px;
+    left: 0;
 }
 
+/**/
 
+.resultado-card {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 300px;
+    /* Ancho de cada tarjeta, puedes ajustarlo según tus necesidades */
+    display: inline-block;
+    transition: all 0.3s ease-in-out ;
+}
+.resultado-card:hover{
+    transform: scale(1.03)
+}
 
+/* Estilos para la imagen */
+.resultado-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+/* Estilos para los párrafos de información */
+.resultado-card p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Estilos específicos para el tipo de propiedad */
+.resultado-card p:first-child {
+    font-weight: bold;
+    font-size: 18px;
+    color: #0099ff;
+}

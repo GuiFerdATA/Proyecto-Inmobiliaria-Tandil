@@ -33,32 +33,59 @@ $enlacesMenu.forEach((items) => {
 
 
 /* filtrado de búsquedo */
-const $resultadosContainer = document.getElementById("resultado");
-
 document.addEventListener("DOMContentLoaded", function () {
-    const urlParams = new URLSearchParams(window.location.search);
-    const busqueda = urlParams.get("busqueda");
-  
-    if (busqueda) {
-      const resultado = propiedades.filter((propiedad) =>
+  const urlParams = new URLSearchParams(window.location.search);
+  const busqueda = urlParams.get("busqueda");
+
+  if (busqueda) {
+    const palabrasClave = busqueda.toLowerCase().split(" ");
+
+    const resultados = propiedades.filter((propiedad) =>
+      palabrasClave.every((clave) =>
         Object.values(propiedad)
           .map((valor) => valor.toString().toLowerCase())
-          .some((valor) => valor.includes(busqueda.toLowerCase()))
-      );
-  
-      if (resultado.length > 0) {
-        $resultadosContainer.innerHTML = `<h2>Resultados de la búsqueda para "${busqueda}":</h2>`;
-        resultado.forEach((propiedad) => {
-          $resultadosContainer.innerHTML += `
-            <div>
-              <p>Tipo: ${propiedad.tipo}</p>
-              <p>Precio: ${propiedad.precio}</p>
-              <p>Ubicación: ${propiedad.ubicación}</p>
-            </div>
-          `;
-        });
-      } else {
-        resultadosContainer.innerHTML = `<p>No se encontraron resultados para "${busqueda}".</p>`;
-      }
+          .some((valor) => valor.includes(clave))
+      )
+    );
+
+    const resultadosContainer = document.getElementById("resultado");
+
+    if (resultados.length > 0) {
+      resultadosContainer.innerHTML = `<h1 class="titleResultados">Resultados de la búsqueda para "${busqueda}":</h1>`;
+      resultados.forEach((propiedad) => {
+        resultadosContainer.innerHTML += `
+          <div class="resultado-card">
+            <img src="${propiedad.img}" alt="Imagen de la propiedad">
+            <p>Tipo: ${propiedad.tipo}</p>
+            <p>Precio: $${propiedad.precio}</p>
+            <p>Ubicación: ${propiedad.ubicación}</p>
+            <p>Baños: ${propiedad.baños}</p>
+          </div>
+        `;
+      });
+    } else {
+      resultadosContainer.innerHTML = `<p>No se encontraron resultados para "${busqueda}".</p>`;
     }
-  });
+  } else {
+    // Caso especial cuando el campo de búsqueda está vacío
+    
+    mostrarTodasLasPropiedades();
+  }
+
+  function mostrarTodasLasPropiedades() {
+    const resultadosContainer = document.getElementById("resultado");
+    resultadosContainer.innerHTML = ""; // Limpia cualquier resultado anterior
+
+    propiedades.forEach((propiedad) => {
+      resultadosContainer.innerHTML += `
+        <div class="resultado-card">
+          <img src="${propiedad.img}" alt="Imagen de la propiedad">
+          <p>Tipo: ${propiedad.tipo}</p>
+          <p>Precio: $${propiedad.precio}</p>
+          <p>Ubicación: ${propiedad.ubicación}</p>
+          <p>Baños: ${propiedad.baños}</p>
+        </div>
+      `;
+    });
+  }
+});
