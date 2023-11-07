@@ -287,44 +287,5 @@ body {
     left: 0;   
 }
 
-/*SECCION BUSQUEDA*/
-#body_resultados{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-}
-#resultadoBusqueda{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
 
-.card-body{
-    background-color:#1aa3ff;
- }
-
-.card{
-    margin-top: 100px;
-    width: 25%;
-    margin-left: 10px;
-    margin-right: 10px;
-    transition: all 0.3s ease-in-out;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    
-}
-.card:hover{
-    transform: scale(1.03)
-}
-.card-title{
-font-size: 20px;
-
-}
-.card-text{
-    font-size: 16px;
-    letter-spacing: 0.1em;
-}

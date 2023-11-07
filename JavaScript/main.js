@@ -1,10 +1,5 @@
-import propiedades from "./propiedades.js";
+import propiedades from './propiedades.js';
 
-
-
-/* variables */
-const $enlacesMenu = document.querySelectorAll('.contenedor_header ul li a')
-const $formBusqueda = document.getElementById('formBusqueda');
 
 
 
@@ -23,6 +18,8 @@ window.addEventListener('load', function () {
 
 
 /* hover nav */
+const $enlacesMenu = document.querySelectorAll('.contenedor_header ul li a')
+
 $enlacesMenu.forEach((items) => {
     items.addEventListener('mouseenter', () => {
         items.style.backgroundColor = 'rgb(249, 183, 0)'
@@ -36,82 +33,32 @@ $enlacesMenu.forEach((items) => {
 
 
 /* filtrado de búsquedo */
-$formBusqueda.addEventListener("submit", (event) => {
-    event.preventDefault();
+const $resultadosContainer = document.getElementById("resultado");
 
-    const terminoBusqueda = document.getElementById('inputBusqueda').value.toLowerCase();
-    const propiedadesFiltradas = buscarPropiedades(terminoBusqueda);
-
-    if (propiedadesFiltradas.length === 0) {
-        // Si no se encontraron propiedades
-        alert("No se encontraron propiedades que coincidan con la búsqueda.");
-    } else {
-        // Abrir una nueva ventana y guardar una referencia a la ventana actual
-        const ventanaActual = window;
-        const ventanaResultados = window.open('./resultados.html');
-
-        // Esperar a que se cargue el contenido de la ventana de resultados
-        ventanaResultados.onload = function () {
-            const resultadosHTML = propiedadesFiltradas.map(propiedad => `
-                <div class="contenedor_header">
-                    <header>
-                        <div class="logo_img">
-                            <img src="./IMG/logo_nav.jpg" alt="logo">
-                        </div>
-                        <nav id="nav">
-                            <ul>
-                                <li><a href="./index.html">Inicio</a></li>
-                                <li><a href="./pages/portal.html">Portal</a></li>
-                                <li><a href="#">Contacto</a></li>
-                            </ul>
-                        </nav>
-                        <div class="nav-responsive">
-                            <i class="fa-solid fa-bars"></i>
-                        </div>
-                    </header>
-                </div>
-                <svg class="svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#1AA3FF" fill-opacity="1"
-                    d="M0,32L120,32C240,32,480,32,720,53.3C960,75,1200,117,1320,138.7L1440,160L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
-                </path>
-            </svg>
-                    <div id="resultadoBusqueda">
-                        <div class="card">
-                            <img src="${propiedad.img}" alt="${propiedad.titulo}">
-                            <div class="card-body">
-                                <h5 class="card-title">${propiedad.titulo}</h5>
-                                <p class="card-text">Tipo: ${propiedad.tipo}</p>
-                                <p class="card-text">Habitaciones: ${propiedad.habitaciones}</p>
-                                <p class="card-text">Baños: ${propiedad.baños}</p>
-                                <p class="card-text">Precio: ${propiedad.precio}</p>
-                                <p class="card-text">Patio: ${propiedad.patio ? "Sí" : "No"}</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-              
-            `).join('');
-
-            // Insertar el contenido HTML en la ventana de resultados
-            ventanaResultados.document.body.innerHTML = resultadosHTML;
-
-            // Cerrar la ventana anterior (ventana actual) después de un tiempo para dar tiempo a cargar la nueva ventana
-            setTimeout(function () {
-                ventanaActual.close();
-            }, 1);
-        };
+document.addEventListener("DOMContentLoaded", function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const busqueda = urlParams.get("busqueda");
+  
+    if (busqueda) {
+      const resultado = propiedades.filter((propiedad) =>
+        Object.values(propiedad)
+          .map((valor) => valor.toString().toLowerCase())
+          .some((valor) => valor.includes(busqueda.toLowerCase()))
+      );
+  
+      if (resultado.length > 0) {
+        $resultadosContainer.innerHTML = `<h2>Resultados de la búsqueda para "${busqueda}":</h2>`;
+        resultado.forEach((propiedad) => {
+          $resultadosContainer.innerHTML += `
+            <div>
+              <p>Tipo: ${propiedad.tipo}</p>
+              <p>Precio: ${propiedad.precio}</p>
+              <p>Ubicación: ${propiedad.ubicación}</p>
+            </div>
+          `;
+        });
+      } else {
+        resultadosContainer.innerHTML = `<p>No se encontraron resultados para "${busqueda}".</p>`;
+      }
     }
-});
-
-function buscarPropiedades(termino) {
-    return propiedades.filter(propiedad => {
-        return (
-            propiedad.titulo.toLowerCase().includes(termino) ||
-            propiedad.tipo.toLowerCase().includes(termino)
-        );
-    });
-}
-/*fin filtrado de búsquedo*/
-
-
-
+  });
