@@ -57,9 +57,12 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="resultado-card">
             <img src="${propiedad.img}" alt="Imagen de la propiedad">
             <p>Tipo: ${propiedad.tipo}</p>
-            <p>Precio: $${propiedad.precio}</p>
-            <p>Ubicación: ${propiedad.ubicación}</p>
+            <p>Habitaciones: ${propiedad.habitaciones}</p>
             <p>Baños: ${propiedad.baños}</p>
+            <p>Patio: ${propiedad.patio}</p>
+            <p>Ubicación: ${propiedad.ubicación}</p>
+            <p>Precio: $${propiedad.precio}</p>
+
           </div>
         `;
       });
@@ -81,9 +84,12 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="resultado-card">
           <img src="${propiedad.img}" alt="Imagen de la propiedad">
           <p>Tipo: ${propiedad.tipo}</p>
-          <p>Precio: $${propiedad.precio}</p>
-          <p>Ubicación: ${propiedad.ubicación}</p>
+          <p>Habitaciones: ${propiedad.habitaciones}</p>
           <p>Baños: ${propiedad.baños}</p>
+          <p>Patio: ${propiedad.patio}</p>
+          <p>Ubicación: ${propiedad.ubicación}</p>
+          <p>Precio: $${propiedad.precio}</p>
+
         </div>
       `;
     });

@@ -7,7 +7,7 @@ const propiedades = [
         titulo: 'Casa con 3 habitaciones y patio',
         habitaciones: 3,
         baños: 2,
-        patio: true,
+        patio: "Si",
         img: "../IMG/portada.jpeg",
 
     },
@@ -19,7 +19,7 @@ const propiedades = [
         titulo: 'Departamento con cuatro 4 habitaciones 2 baños y patio',
         habitaciones: 4,
         baños: 1,
-        patio: false,
+        patio: "No",
         img: "../IMG/portada.jpeg",
 
     },
@@ -31,7 +31,7 @@ const propiedades = [
         titulo: 'Casa  de con  tres 3 habitaciones cocina, comedor y patio',
         habitaciones: 5,
         baños: 2,
-        patio: true,
+        patio: "Si",
         img: "../IMG/portada.jpeg",
 
       },
@@ -43,7 +43,7 @@ const propiedades = [
         titulo: 'Departamento con  1 habitacion  y estacionamiento',
         habitaciones: 1,
         baños: 1,
-        patio: false,
+        patio: "No",
         img: "../IMG/portada.jpeg",
       },
       {
@@ -54,7 +54,7 @@ const propiedades = [
         titulo: 'Casa con 3 habitaciones y patio',
         habitaciones: 3,
         baños: 2,
-        patio: true,
+        patio: "Si",
         img: "../IMG/portada.jpeg",
       },
       {
@@ -65,7 +65,7 @@ const propiedades = [
         titulo: 'Departamento  3 habitaciones y estacionamiento',
         habitaciones: 3,
         baños: 1,
-        patio: false,
+        patio: "No",
         img: "../IMG/portada.jpeg",
 
       },
@@ -77,7 +77,7 @@ const propiedades = [
         titulo: 'Casa con 3 habitaciones patio',
         habitaciones: 3,
         baños: 2,
-        patio: true,
+        patio: "Si",
         img: "../IMG/portada.jpeg",
 
     },
@@ -89,7 +89,7 @@ const propiedades = [
         titulo: 'Departamento  4 habitaciones y estacionamiento',
         habitaciones: 4,
         baños: 1,
-        patio: false,
+        patio: "No",
         img: "../IMG/portada.jpeg",
     },
     {
@@ -100,7 +100,7 @@ const propiedades = [
         titulo: 'Casa con 3 habitaciones y patio',
         habitaciones: 5,
         baños: 2,
-        patio: true,
+        patio: "Si",
         img: "../IMG/portada.jpeg",
         
       },
@@ -112,7 +112,7 @@ const propiedades = [
         titulo: 'Departamento con  1 habitaciones y patio',
         habitaciones: 1,
         baños: 1,
-        patio: false,
+        patio: "No",
         img: "../IMG/portada.jpeg",
 
       },
