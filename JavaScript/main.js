@@ -84,7 +84,6 @@ document.addEventListener("DOMContentLoaded", function () {
           <p>Patio: ${propiedad.patio}</p>
           <p>Ubicación: ${propiedad.ubicación}</p>
           <p>Precio: $${propiedad.precio}</p>
-
         </div>
       `;
     });
