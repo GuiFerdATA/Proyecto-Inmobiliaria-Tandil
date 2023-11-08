@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const resultadosContainer = document.getElementById("resultado");
 
     if (resultados.length > 0) {
-      resultadosContainer.innerHTML = `<h1 class="titleResultados">Resultados de la búsqueda para "${busqueda}":</h1>`;
+      resultadosContainer.innerHTML = `<h1 class="titleResultados">- Resultados de la búsqueda para "${busqueda}":</h1>`;
       resultados.forEach((propiedad) => {
         resultadosContainer.innerHTML += `
           <div class="resultado-card">
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
       });
     } else {
-      resultadosContainer.innerHTML = `<p class="parraforNegativo">No se encontraron resultados para "${busqueda}".</p>`;
+      resultadosContainer.innerHTML = `<p class="parraforNegativo">- No se encontraron resultados para "${busqueda}".</p>`;
     }
   } else {
     // Caso especial cuando el campo de búsqueda está vacío

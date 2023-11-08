@@ -112,6 +112,7 @@ body {
     align-items: center;
     position: sticky;
     background: white;
+    margin-top: 20px;
   }
   
   #resultado {
@@ -125,7 +126,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 10px;
     margin: 10px;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
     padding: 10px;
     box-shadow: 0 2px 4px #a27e1a6e;
     background-color: #fff;
@@ -137,7 +138,6 @@ body {
     transform: scale(1.03)
 }
 
-/* Estilos para la imagen */
 .resultado-card img {
     max-width: 100%;
     height: auto;
@@ -146,7 +146,6 @@ body {
 
 }
 
-/* Estilos para los párrafos de información */
 .resultado-card p {
     margin: 5px 0;
     font-size: 16px;
@@ -155,7 +154,6 @@ body {
 
 }
 
-/* Estilos específicos para el tipo de propiedad */
 .resultado-card p:first-child {
     font-weight: bold;
     font-size: 18px;
@@ -167,4 +165,14 @@ body {
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
 
+}
+.titleResultados{
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+.label_BusPropiedadesPortal{
+    font-size: 22px;
 }
