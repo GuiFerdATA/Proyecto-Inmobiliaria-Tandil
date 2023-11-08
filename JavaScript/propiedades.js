@@ -2,7 +2,7 @@ const propiedades = [
   {
     id: 1,
     tipo: 'Casa',
-    precio: 160000,
+    precio: 250000,
     ubicación: "centro",
     titulo: 'Casa de con 3  dormitorios habitaciones y con patio',
     habitaciones: 3,
@@ -14,7 +14,7 @@ const propiedades = [
   {
     id: 2,
     tipo: 'Departamento',
-    precio: 160000,
+    precio: 170000,
     ubicación: "centro",
     titulo: 'Departamento de con cuatro 4 habitaciones 2 baños y con patio',
     habitaciones: 4,
@@ -38,7 +38,7 @@ const propiedades = [
   {
     id: 4,
     tipo: 'Departamento',
-    precio: 160000,
+    precio: 200000,
     ubicación: "centro",
     titulo: 'Departamento con un de una 1  dormitorio habitacion  con y estacionamiento',
     habitaciones: 1,
@@ -49,7 +49,7 @@ const propiedades = [
   {
     id: 5,
     tipo: 'Casa',
-    precio: 160000,
+    precio: 190000,
     ubicación: "centro",
     titulo: 'Casa con de tres 3 dormitorios habitaciones y con patio',
     habitaciones: 3,
@@ -60,7 +60,7 @@ const propiedades = [
   {
     id: 6,
     tipo: 'Departamento',
-    precio: 160000,
+    precio: 180000,
     ubicación: "centro",
     titulo: 'Departamento con de tres 3 dormitorios habitaciones y con estacionamiento',
     habitaciones: 3,
@@ -72,7 +72,7 @@ const propiedades = [
   {
     id: 7,
     tipo: 'Casa',
-    precio: 160000,
+    precio: 199000,
     ubicacion: "centro",
     titulo: 'Casa con de tres 3  dormitorios habitaciones y con patio',
     habitaciones: 3,
@@ -95,7 +95,7 @@ const propiedades = [
   {
     id: 9,
     tipo: 'Casa',
-    precio: 11111110000,
+    precio: 150000,
     ubicación: "centro",
     titulo: 'Casa de con  tres 3 dormitorios habitaciones y con patio',
     habitaciones: 5,
@@ -119,7 +119,7 @@ const propiedades = [
   {
     id: 11,
     tipo: 'Departamento',
-    precio: 120000,
+    precio: 130000,
     ubicación: "centro",
     titulo: 'Departamento con una 1 un  dormitorio habitaciones y patio',
     habitaciones: 1,
@@ -128,6 +128,42 @@ const propiedades = [
     img: "../IMG/portada.jpeg",
 
   },
+  {
+    id: 12,
+    tipo: 'Casa',
+    precio: 140000,
+    ubicación: "centro",
+    titulo: 'Casa de con un una  1 dormitorio habitacion y con patio',
+    habitaciones: 5,
+    baños: 2,
+    patio: "Si",
+    img: "../IMG/portada.jpeg",
+  },
+
+  {
+    id: 13,
+    tipo: 'Casa',
+    precio: 130000,
+    ubicación: "centro",
+    titulo: 'Casa de con un una  1 dormitorio habitacion y con patio',
+    habitaciones: 5,
+    baños: 2,
+    patio: "Si",
+    img: "../IMG/portada.jpeg",
+
+  },
+  {
+    id: 14,
+    tipo: 'Casa',
+    precio: 133000,
+    ubicación: "centro",
+    titulo: 'Casa de con un una  1 dormitorio habitacion y con patio',
+    habitaciones: 5,
+    baños: 2,
+    patio: "Si",
+    img: "../IMG/portada.jpeg",
+
+  }
 
 ]
 
