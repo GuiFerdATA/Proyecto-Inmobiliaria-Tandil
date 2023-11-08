@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
       });
     } else {
-      resultadosContainer.innerHTML = `<p>No se encontraron resultados para "${busqueda}".</p>`;
+      resultadosContainer.innerHTML = `<p class="parraforNegativo">No se encontraron resultados para "${busqueda}".</p>`;
     }
   } else {
     // Caso especial cuando el campo de búsqueda está vacío

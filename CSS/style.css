@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:ital,wght@1,300&family=Righteous&family=Sen&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
 
 
 
@@ -47,7 +47,6 @@ body {
     align-items: center;
     z-index: 9999;
     background: url('../IMG/carga.gif') 50% 50% no-repeat rgb(249, 249, 249);
-    opacity: 0.9;
 }
 
 .contenedor_header {
@@ -164,7 +163,13 @@ body {
     width: 50%;
     margin-left: 300px;
 }
-
+.label_BusPropiedades{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.form_index{
+    margin-right: 110px;
+}
 /*NUESTRO OBJETIVO*/
 .contenido_objetivo {
     scroll-margin: 3.5em;
@@ -275,61 +280,5 @@ body {
 }
 
 /*PORTAL*/
-.contenido_portal {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    flex-wrap: wrap;
-    padding: 50px;
-    margin-top: 50px;
-}
 
 
-.svg4 {
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-}
-
-/**/
-
-.resultado-card {
-    position: relative;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    width: 300px;
-    /* Ancho de cada tarjeta, puedes ajustarlo según tus necesidades */
-    display: inline-block;
-    transition: all 0.3s ease-in-out ;
-}
-.resultado-card:hover{
-    transform: scale(1.03)
-}
-
-/* Estilos para la imagen */
-.resultado-card img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 10px;
-
-}
-
-/* Estilos para los párrafos de información */
-.resultado-card p {
-    margin: 5px 0;
-    font-size: 16px;
-    color: #333;
-}
-
-/* Estilos específicos para el tipo de propiedad */
-.resultado-card p:first-child {
-    font-weight: bold;
-    font-size: 18px;
-    color: #0099ff;
-}

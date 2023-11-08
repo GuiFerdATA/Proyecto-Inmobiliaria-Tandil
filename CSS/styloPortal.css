@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:ital,wght@1,300&family=Righteous&family=Sen&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+
+
+.contenedor_header {
+    background: transparent;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    position: fixed;
+}
+
+.contenedor_header header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+
+.logo_img img {
+    height: 50px;
+}
+
+.contenedor_header header nav ul {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.contenedor_header header nav ul li {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.contenedor_header header nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.nav-responsive {
+    color: transparent;
+    padding: 15px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/*PORTAL*/
+.contenido_portal {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+
+.svg4 {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+
+
+.form_Portal-container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    background: white;
+  }
+  
+  #resultado {
+    padding: 10px;
+    text-align: center;
+  }
+
+.resultado-card {
+    text-align: center;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px #a27e1a6e;
+    background-color: #fff;
+    width: 300px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out ;
+}
+.resultado-card:hover{
+    transform: scale(1.03)
+}
+
+/* Estilos para la imagen */
+.resultado-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+/* Estilos para los párrafos de información */
+.resultado-card p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Estilos específicos para el tipo de propiedad */
+.resultado-card p:first-child {
+    font-weight: bold;
+    font-size: 18px;
+    color: #0099ff;
+}
+
+.parraforNegativo{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+
+}
