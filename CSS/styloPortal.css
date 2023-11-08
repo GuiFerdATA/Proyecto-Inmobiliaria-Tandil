@@ -129,7 +129,7 @@ body {
     margin-bottom: 40px;
     padding: 10px;
     box-shadow: 0 2px 4px #a27e1a6e;
-    background-color: #fff;
+    background-color: rgba(109, 142, 0, 0.027);  
     width: 300px;
     display: inline-block;
     transition: all 0.3s ease-in-out ;
