@@ -76,8 +76,9 @@ body {
 }
 
 .nav-responsive {
-    color: transparent;
-    padding: 15px 15px;
+    color: #F9B700;
+    font-size: 30px;
+    padding: 15spx 15px;
     border-radius: 5px;
     cursor: pointer;
     display: none;
@@ -175,4 +176,37 @@ body {
 
 .label_BusPropiedadesPortal{
     font-size: 22px;
+}
+
+
+/*media query*/
+@media screen and (max-width: 998px) {
+    
+
+    /*SECCION NAV*/
+    nav {
+        display: none;
+    }
+
+    .nav-responsive {
+        display: block;
+    }
+
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 95px;
+        background-color: #1E2D3B;
+        width: 200px;
+
+    }
+
+    nav.responsive ul {
+        display: block !important;
+    }
+
+    nav.responsive ul li {
+        padding: 10px;
+    }
 }
