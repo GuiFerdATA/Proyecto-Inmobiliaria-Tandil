@@ -1,6 +1,8 @@
 import propiedades from './propiedades.js';
 
 
+
+
 /*carga de pagina*/
 window.addEventListener('load', function () {
     setTimeout(function () {
@@ -13,6 +15,23 @@ window.addEventListener('load', function () {
     }, 600);
 });
 /*fin carga pagina*/
+
+
+const navResponsive = document.querySelector('.nav-responsive');
+const nav = document.querySelector('nav');
+
+let menuVisible = false;
+
+navResponsive.addEventListener('click', () => {
+  if(menuVisible){
+    document.getElementById("nav").classList ="";
+    menuVisible = false;
+}else{
+    document.getElementById("nav").classList ="responsive";
+    menuVisible = true;
+}
+});
+
 
 /* hover nav */
 const $enlacesMenu = document.querySelectorAll('.contenedor_header ul li a')
