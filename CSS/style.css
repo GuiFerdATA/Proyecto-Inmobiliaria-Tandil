@@ -144,14 +144,23 @@ body {
     margin-left: 300px;
 }
 
+.form_index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_index>input {
+    margin-top: 10px;
+}
+
 .label_BusPropiedades {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
 }
 
-.form_index {
-    margin-right: 110px;
-}
+
 
 /*NUESTRO OBJETIVO*/
 .contenido_objetivo {
@@ -307,17 +316,70 @@ body {
     .form_index>input {
         font-size: 14px;
     }
+
     /*objetivos*/
-    .container_derObjetivos p{
-        font-size: 17px;
+    .container_derObjetivos p {
+        font-size: 16px;
         width: 75%;
     }
-    .container_izqObjetivos p{
+
+    .container_izqObjetivos p {
         font-size: 17px;
         margin-top: 40px;
     }
-    .container_objetivo h2{
+
+    .container_objetivo h2 {
         font-size: 55px;
     }
+    .btn_downTree > i{
+        font-size: 25px;
+    }
 
+}
+
+/*mobile*/
+@media (max-width: 700px) {
+    .contenido_inicio h1 {
+        font-size: 45px;
+    }
+
+    .form_index>label {
+        font-size: 16px;
+    }
+
+    .form_index>input {
+        font-size: 16px;
+    }
+
+    .form_index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form_index>input {
+        margin-top: 10px;
+    }
+
+    /*objetivos*/
+
+    .container_derObjetivos p {
+        font-size: 13px;
+        width: 63%;
+        margin-top: 20px;
+    }
+
+    .container_izqObjetivos p {
+        font-size: 13px;
+        margin-top: 40px;
+    }
+
+    .container_objetivo h2 {
+        font-size: 45px;
+    }
+    .container_izqObjetivos>h3{
+        font-size: 33px;
+        margin-left: 50px;
+    }
 }
