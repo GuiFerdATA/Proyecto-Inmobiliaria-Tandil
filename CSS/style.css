@@ -115,17 +115,40 @@ body {
 .contenido_inicio h1 {
     font-size: 70px;
     font-family: 'Poppins', sans-serif;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.1em;
     text-decoration: none;
 }
 
 .spanInmobiliaria {
     color: rgb(249, 183, 0);
+   
 }
 
 .spanTandil {
     color: rgb(249, 183, 0);
 }
+.spanPorDia{
+    animation: teclear 1.9s steps(100) infinite;
+}
+
+@keyframes teclear {
+    from {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+@keyframes efecto {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+
 
 .contenido_inicio a {
     color: rgb(249, 183, 0);
