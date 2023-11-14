@@ -47,6 +47,9 @@ $enlacesMenu.forEach((items) => {
 
 
 /* filtrado de búsqueda */
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(window.location.search);
   const busqueda = urlParams.get("busqueda");
@@ -69,14 +72,36 @@ document.addEventListener("DOMContentLoaded", function () {
       resultados.forEach((propiedad) => {
         resultadosContainer.innerHTML += `
           <div class="resultado-card">
-            <img src="${propiedad.img}" alt="Imagen de la propiedad">
+            <div id="carousel-${propiedad.id}" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="${propiedad.img1}" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="${propiedad.img2}" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="${propiedad.img3}" class="d-block w-100" alt="Imagen 3">
+                </div>
+                <div class="carousel-item">
+                  <img src="${propiedad.img4}" class="d-block w-100" alt="Imagen 4">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carousel-${propiedad.id}" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel-${propiedad.id}" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
             <p>Tipo: ${propiedad.tipo}</p>
             <p>Habitaciones: ${propiedad.habitaciones}</p>
             <p>Baños: ${propiedad.baños}</p>
             <p>Patio: ${propiedad.patio}</p>
             <p>Ubicación: ${propiedad.ubicación}</p>
             <p>Precio: $${propiedad.precio}</p>
-
           </div>
         `;
       });
@@ -85,7 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   } else {
     // Caso especial cuando el campo de búsqueda está vacío
-
     mostrarTodasLasPropiedades();
   }
 
@@ -96,7 +120,30 @@ document.addEventListener("DOMContentLoaded", function () {
     propiedades.forEach((propiedad) => {
       resultadosContainer.innerHTML += `
         <div class="resultado-card">
-          <img src="${propiedad.img}" alt="Imagen de la propiedad">
+          <div id="carousel-${propiedad.id}" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="${propiedad.img1}" class="d-block w-100" alt="Imagen 1">
+              </div>
+              <div class="carousel-item">
+                <img src="${propiedad.img2}" class="d-block w-100" alt="Imagen 2">
+              </div>
+              <div class="carousel-item">
+                <img src="${propiedad.img3}" class="d-block w-100" alt="Imagen 3">
+              </div>
+              <div class="carousel-item">
+                <img src="${propiedad.img4}" class="d-block w-100" alt="Imagen 4">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-${propiedad.id}" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-${propiedad.id}" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
           <p>Tipo: ${propiedad.tipo}</p>
           <p>Habitaciones: ${propiedad.habitaciones}</p>
           <p>Baños: ${propiedad.baños}</p>
@@ -108,7 +155,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-
 
 
 

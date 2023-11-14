@@ -8,7 +8,10 @@ const propiedades = [
     habitaciones: 3,
     baños: 2,
     patio: "Si",
-    img: "../IMG/portada.jpeg",
+    img1: "../IMG/portada.jpeg",
+    img2: "../IMG/portada.jpeg",
+    img3: "../IMG/portada.jpeg",
+    img4: "../IMG/portada.jpeg"
 
   },
   {
@@ -20,8 +23,10 @@ const propiedades = [
     habitaciones: 4,
     baños: 1,
     patio: "No",
-    img: "../IMG/portada.jpeg",
-
+    img1: "../IMG/portada.jpeg",
+    img2: "../IMG/portada.jpeg",
+    img3: "../IMG/portada.jpeg",
+    img4: "../IMG/portada.jpeg"
   },
   {
     id: 3,
@@ -32,8 +37,10 @@ const propiedades = [
     habitaciones: 5,
     baños: 2,
     patio: "Si",
-    img: "../IMG/portada.jpeg",
-
+    img1: "../IMG/portada.jpeg",
+    img2: "../IMG/portada.jpeg",
+    img3: "../IMG/portada.jpeg",
+    img4: "../IMG/portada.jpeg"
   },
   {
     id: 4,
@@ -44,7 +51,10 @@ const propiedades = [
     habitaciones: 1,
     baños: 1,
     patio: "No",
-    img: "../IMG/portada.jpeg",
+    img1: "../IMG/portada.jpeg",
+    img2: "../IMG/portada.jpeg",
+    img3: "../IMG/portada.jpeg",
+    img4: "../IMG/portada.jpeg"
   },
   {
     id: 5,
@@ -55,7 +65,10 @@ const propiedades = [
     habitaciones: 3,
     baños: 2,
     patio: "Si",
-    img: "../IMG/portada.jpeg",
+    img1: "../IMG/portada.jpeg",
+    img2: "../IMG/portada.jpeg",
+    img3: "../IMG/portada.jpeg",
+    img4: "../IMG/portada.jpeg"
   },
   {
     id: 6,
@@ -66,8 +79,10 @@ const propiedades = [
     habitaciones: 3,
     baños: 1,
     patio: "No",
-    img: "../IMG/portada.jpeg",
-
+    img1: "../IMG/portada.jpeg",
+    img2: "../IMG/portada.jpeg",
+    img3: "../IMG/portada.jpeg",
+    img4: "../IMG/portada.jpeg"
   },
   {
     id: 7,
@@ -78,8 +93,10 @@ const propiedades = [
     habitaciones: 3,
     baños: 2,
     patio: "Si",
-    img: "../IMG/portada.jpeg",
-
+    img1: "../IMG/portada.jpeg",
+    img2: "../IMG/portada.jpeg",
+    img3: "../IMG/portada.jpeg",
+    img4: "../IMG/portada.jpeg"
   },
   {
     id: 8,
@@ -90,7 +107,10 @@ const propiedades = [
     habitaciones: 4,
     baños: 1,
     patio: "No",
-    img: "../IMG/portada.jpeg",
+    img1: "../IMG/portada.jpeg",
+    img2: "../IMG/portada.jpeg",
+    img3: "../IMG/portada.jpeg",
+    img4: "../IMG/portada.jpeg"
   },
   {
     id: 9,
@@ -101,7 +121,10 @@ const propiedades = [
     habitaciones: 5,
     baños: 2,
     patio: "Si",
-    img: "../IMG/portada.jpeg",
+    img1: "../IMG/portada.jpeg",
+    img2: "../IMG/portada.jpeg",
+    img3: "../IMG/portada.jpeg",
+    img4: "../IMG/portada.jpeg"
 
   },
   {
@@ -113,8 +136,10 @@ const propiedades = [
     habitaciones: 1,
     baños: 1,
     patio: "No",
-    img: "../IMG/portada.jpeg",
-
+    img1: "../IMG/portada.jpeg",
+    img2: "../IMG/portada.jpeg",
+    img3: "../IMG/portada.jpeg",
+    img4: "../IMG/portada.jpeg"
   },
   {
     id: 11,
@@ -125,8 +150,10 @@ const propiedades = [
     habitaciones: 1,
     baños: 1,
     patio: "No",
-    img: "../IMG/portada.jpeg",
-
+    img1: "../IMG/portada.jpeg",
+    img2: "../IMG/portada.jpeg",
+    img3: "../IMG/portada.jpeg",
+    img4: "../IMG/portada.jpeg"
   },
   {
     id: 12,
@@ -137,8 +164,10 @@ const propiedades = [
     habitaciones: 5,
     baños: 2,
     patio: "Si",
-    img: "../IMG/portada.jpeg",
-  },
+    img1: "../IMG/portada.jpeg",
+    img2: "../IMG/portada.jpeg",
+    img3: "../IMG/portada.jpeg",
+    img4: "../IMG/portada.jpeg"  },
 
   {
     id: 13,
@@ -149,8 +178,10 @@ const propiedades = [
     habitaciones: 5,
     baños: 2,
     patio: "Si",
-    img: "../IMG/portada.jpeg",
-
+    img1: "../IMG/portada.jpeg",
+    img2: "../IMG/portada.jpeg",
+    img3: "../IMG/portada.jpeg",
+    img4: "../IMG/portada.jpeg"
   },
   {
     id: 14,
@@ -161,8 +192,10 @@ const propiedades = [
     habitaciones: 5,
     baños: 2,
     patio: "Si",
-    img: "../IMG/portada.jpeg",
-
+    img1: "../IMG/portada.jpeg",
+    img2: "../IMG/portada.jpeg",
+    img3: "../IMG/portada.jpeg",
+    img4: "../IMG/portada.jpeg"
   }
 
 ]
