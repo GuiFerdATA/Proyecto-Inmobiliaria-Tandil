@@ -13,7 +13,7 @@ window.addEventListener('load', function () {
     document.getElementById('loader2').style.display = 'none';
   }, 600);
 });
-/*fin carga pagina*/
+
 
 /*nav responsive */
 const navResponsive = document.querySelector('.nav-responsive');
@@ -30,7 +30,7 @@ navResponsive.addEventListener('click', () => {
     menuVisible = true;
   }
 });
-/*fin de nav responsive*/
+
 
 /* hover nav */
 const $enlacesMenu = document.querySelectorAll('.contenedor_header ul li a')
@@ -43,7 +43,7 @@ $enlacesMenu.forEach((items) => {
     items.style.backgroundColor = ''
   })
 });
-/*fin hover nav*/
+
 
 
 /* filtrado de búsqueda */

@@ -276,7 +276,6 @@ body {
 /*media query*/
 @media screen and (max-width: 998px) {
 
-
     /*SECCION NAV*/
     nav {
         display: none;
@@ -291,7 +290,7 @@ body {
         position: absolute;
         right: 0px;
         top: 75px;
-        background-color:rgba(44, 108, 151, 0.485);  
+        background-color: rgba(44, 108, 151, 0.485);
         backdrop-filter: blur(5px);
         text-align: center;
     }
@@ -302,9 +301,10 @@ body {
 
     nav.responsive ul li {
         padding: 10px;
-        
+
     }
-    .contenedor_header header nav ul li a{
+
+    .contenedor_header header nav ul li a {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -340,7 +340,8 @@ body {
     .container_objetivo h2 {
         font-size: 55px;
     }
-    .btn_downTree > i{
+
+    .btn_downTree>i {
         font-size: 25px;
     }
 
@@ -387,7 +388,8 @@ body {
     .container_objetivo h2 {
         font-size: 45px;
     }
-    .container_izqObjetivos>h3{
+
+    .container_izqObjetivos>h3 {
         font-size: 33px;
         margin-left: 50px;
     }
