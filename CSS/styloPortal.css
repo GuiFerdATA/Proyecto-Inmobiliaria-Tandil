@@ -182,6 +182,9 @@ body {
 /*media query*/
 @media screen and (max-width: 998px) {
     
+/*media query*/
+@media screen and (max-width: 998px) {
+
 
     /*SECCION NAV*/
     nav {
@@ -196,10 +199,10 @@ body {
         display: block;
         position: absolute;
         right: 0px;
-        top: 95px;
-        background-color: #1E2D3B;
-        width: 200px;
-
+        top: 75px;
+        background-color:rgba(44, 108, 151, 0.485);  
+        backdrop-filter: blur(5px);
+        text-align: center;
     }
 
     nav.responsive ul {
@@ -208,5 +211,16 @@ body {
 
     nav.responsive ul li {
         padding: 10px;
+        
     }
+    .contenedor_header header nav ul li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(8, 8, 8);
+        font-size: 23px;
+
+    }
+
+}
 }

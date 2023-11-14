@@ -16,7 +16,7 @@ window.addEventListener('load', function () {
 });
 /*fin carga pagina*/
 
-
+/*nav responsive */
 const navResponsive = document.querySelector('.nav-responsive');
 const nav = document.querySelector('nav');
 
@@ -31,6 +31,11 @@ navResponsive.addEventListener('click', () => {
     menuVisible = true;
 }
 });
+/*fin de nav responsive*/
+
+
+
+
 
 
 /* hover nav */
@@ -45,6 +50,9 @@ $enlacesMenu.forEach((items) => {
     })
 });
 /*fin hover nav*/
+
+
+
 
 /* filtrado de búsquedo */
 document.addEventListener("DOMContentLoaded", function () {
