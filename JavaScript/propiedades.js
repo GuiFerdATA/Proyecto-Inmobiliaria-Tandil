@@ -196,7 +196,92 @@ const propiedades = [
     img2: "../IMG/portada.jpeg",
     img3: "../IMG/portada.jpeg",
     img4: "../IMG/portada.jpeg"
-  }
+  },
+  {
+    id:15 ,
+    tipo: 'Casa',
+    precio: 133000,
+    ubicación: "centro",
+    titulo: 'Casa de con un una  1 dormitorio habitacion y con patio',
+    habitaciones: 5,
+    baños: 2,
+    patio: "Si",
+    img1: "../IMG/portada.jpeg",
+    img2: "../IMG/portada.jpeg",
+    img3: "../IMG/portada.jpeg",
+    img4: "../IMG/portada.jpeg"
+  },
+  {
+    id:16 ,
+    tipo: 'Casa',
+    precio: 133000,
+    ubicación: "centro",
+    titulo: 'Casa de con un una  1 dormitorio habitacion y con patio',
+    habitaciones: 5,
+    baños: 2,
+    patio: "Si",
+    img1: "../IMG/portada.jpeg",
+    img2: "../IMG/portada.jpeg",
+    img3: "../IMG/portada.jpeg",
+    img4: "../IMG/portada.jpeg"
+  },
+  {
+    id:17,
+    tipo: 'Casa',
+    precio: 133000,
+    ubicación: "centro",
+    titulo: 'Casa de con un una  1 dormitorio habitacion y con patio',
+    habitaciones: 5,
+    baños: 2,
+    patio: "Si",
+    img1: "../IMG/portada.jpeg",
+    img2: "../IMG/portada.jpeg",
+    img3: "../IMG/portada.jpeg",
+    img4: "../IMG/portada.jpeg"
+  },
+  {
+    id:18,
+    tipo: 'Casa',
+    precio: 133000,
+    ubicación: "centro",
+    titulo: 'Casa de con un una  1 dormitorio habitacion y con patio',
+    habitaciones: 5,
+    baños: 2,
+    patio: "Si",
+    img1: "../IMG/portada.jpeg",
+    img2: "../IMG/portada.jpeg",
+    img3: "../IMG/portada.jpeg",
+    img4: "../IMG/portada.jpeg"
+  },
+  {
+    id:19,
+    tipo: 'Casa',
+    precio: 133000,
+    ubicación: "centro",
+    titulo: 'Casa de con un una  1 dormitorio habitacion y con patio',
+    habitaciones: 5,
+    baños: 2,
+    patio: "Si",
+    img1: "../IMG/portada.jpeg",
+    img2: "../IMG/portada.jpeg",
+    img3: "../IMG/portada.jpeg",
+    img4: "../IMG/portada.jpeg"
+  },
+  {
+    id:20,
+    tipo: 'Casa',
+    precio: 133000,
+    ubicación: "centro",
+    titulo: 'Casa de con un una  1 dormitorio habitacion y con patio',
+    habitaciones: 5,
+    baños: 2,
+    patio: "Si",
+    img1: "../IMG/portada.jpeg",
+    img2: "../IMG/portada.jpeg",
+    img3: "../IMG/portada.jpeg",
+    img4: "../IMG/portada.jpeg"
+  },
+  
 
 ]
 

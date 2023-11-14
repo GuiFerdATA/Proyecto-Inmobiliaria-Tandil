@@ -294,6 +294,111 @@ body {
 .btn_downTree:hover {
     color: #198754;
 }
+/* SECCION CONTACTO */
+
+.svgContacto {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+.contacto {
+    scroll-margin: 3.5em;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 50px 0;
+    position: absolute;
+    width: 100%;
+}
+
+.contacto .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+.contacto h4 {
+    color: rgb(249, 183, 0);
+    font-family: 'Outfit', sans-serif;
+    font-size: 50px;
+    letter-spacing: 0.05em;
+    line-height: 0.03em;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+.contacto .fila {
+    display: flex;
+}
+
+.contacto .col {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contacto .col textarea {
+    resize: none;
+}
+
+.contacto .col input,
+.contacto .col textarea {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #064b8f12;
+    backdrop-filter: blur(5px);
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+}
+
+.contacto button {
+    cursor: pointer;
+    background-color:#1AA3FF ;
+    border: 2px solid #1AA3FF;
+    width: 350px;
+    display: block;
+    margin: 0px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #ffffff;
+    position: relative;
+    z-index: 10;
+}
+
+.contacto .col img {
+    width: 100%;
+}
+
+.contacto .col .info {
+    position: absolute;
+    top: 20%;
+    padding: 20px;
+    width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contacto .col .info ul {
+    list-style: none;
+}
+
+.contacto .col .info ul li {
+    margin-bottom: 20px;
+}
+
+.contacto .col .info ul li i {
+    color: #1AA3FF;
+    display: inline-block;
+    margin-right: 20px;
+}
+
 
 
 /*media query*/
@@ -417,3 +522,4 @@ body {
         margin-left: 50px;
     }
 }
+
