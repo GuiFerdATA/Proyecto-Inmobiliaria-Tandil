@@ -128,7 +128,7 @@ body {
     color: rgb(249, 183, 0);
 }
 .spanPorDia{
-    animation: teclear 1.9s steps(100) infinite;
+    animation: teclear 2.4s steps(80) infinite;
 }
 
 @keyframes teclear {
