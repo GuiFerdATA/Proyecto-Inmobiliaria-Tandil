@@ -2,7 +2,6 @@ import propiedades from './propiedades.js';
 
 
 
-
 /*carga de pagina*/
 window.addEventListener('load', function () {
     setTimeout(function () {
@@ -33,11 +32,6 @@ navResponsive.addEventListener('click', () => {
 });
 /*fin de nav responsive*/
 
-
-
-
-
-
 /* hover nav */
 const $enlacesMenu = document.querySelectorAll('.contenedor_header ul li a')
 
@@ -52,9 +46,7 @@ $enlacesMenu.forEach((items) => {
 /*fin hover nav*/
 
 
-
-
-/* filtrado de búsquedo */
+/* filtrado de búsqueda */
 document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(window.location.search);
   const busqueda = urlParams.get("busqueda");
@@ -116,3 +108,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+
+
+
+
