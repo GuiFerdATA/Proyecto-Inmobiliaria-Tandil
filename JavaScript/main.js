@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
       resultados.forEach((propiedad) => {
         resultadosContainer.innerHTML += `
           <div class="resultado-card">
-            <div id="carousel-${propiedad.id}" class="carousel slide" data-ride="carousel">
+            <div id="carousel-${propiedad.id}" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="${propiedad.img1}" class="d-block w-100" alt="Imagen 1">
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
     propiedades.forEach((propiedad) => {
       resultadosContainer.innerHTML += `
         <div class="resultado-card">
-          <div id="carousel-${propiedad.id}" class="carousel slide" data-ride="carousel">
+          <div id="carousel-${propiedad.id}" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="${propiedad.img1}" class="d-block w-100" alt="Imagen 1">

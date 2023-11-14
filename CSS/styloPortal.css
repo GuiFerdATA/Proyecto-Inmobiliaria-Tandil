@@ -187,6 +187,7 @@ body {
 /*media query*/
 @media screen and (max-width: 998px) {
 
+
     /*SECCION NAV*/
     nav {
         display: none;
