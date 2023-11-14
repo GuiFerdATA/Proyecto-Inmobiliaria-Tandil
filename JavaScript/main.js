@@ -4,14 +4,14 @@ import propiedades from './propiedades.js';
 
 /*carga de pagina*/
 window.addEventListener('load', function () {
-    setTimeout(function () {
-        document.getElementById('loader').style.display = 'none';
-    }, 300);
+  setTimeout(function () {
+    document.getElementById('loader').style.display = 'none';
+  }, 300);
 });
 window.addEventListener('load', function () {
-    setTimeout(function () {
-        document.getElementById('loader2').style.display = 'none';
-    }, 600);
+  setTimeout(function () {
+    document.getElementById('loader2').style.display = 'none';
+  }, 600);
 });
 /*fin carga pagina*/
 
@@ -22,13 +22,13 @@ const nav = document.querySelector('nav');
 let menuVisible = false;
 
 navResponsive.addEventListener('click', () => {
-  if(menuVisible){
-    document.getElementById("nav").classList ="";
+  if (menuVisible) {
+    document.getElementById("nav").classList = "";
     menuVisible = false;
-}else{
-    document.getElementById("nav").classList ="responsive";
+  } else {
+    document.getElementById("nav").classList = "responsive";
     menuVisible = true;
-}
+  }
 });
 /*fin de nav responsive*/
 
@@ -36,12 +36,12 @@ navResponsive.addEventListener('click', () => {
 const $enlacesMenu = document.querySelectorAll('.contenedor_header ul li a')
 
 $enlacesMenu.forEach((items) => {
-    items.addEventListener('mouseenter', () => {
-        items.style.backgroundColor = 'rgb(249, 183, 0)'
-    });
-    items.addEventListener('mouseleave', () => {
-        items.style.backgroundColor = ''
-    })
+  items.addEventListener('mouseenter', () => {
+    items.style.backgroundColor = 'rgb(249, 183, 0)'
+  });
+  items.addEventListener('mouseleave', () => {
+    items.style.backgroundColor = ''
+  })
 });
 /*fin hover nav*/
 
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   } else {
     // Caso especial cuando el campo de búsqueda está vacío
-    
+
     mostrarTodasLasPropiedades();
   }
 
