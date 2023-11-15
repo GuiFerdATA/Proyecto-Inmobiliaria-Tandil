@@ -2,19 +2,19 @@ window.sr =ScrollReveal();
     sr.reveal('.contenedor_header', {
         duration: 2500,
         origin:'top',
-        distance: '100px',
+        distance: '50px',
         reset: true,
     });
     sr.reveal('h1', {
         duration: 1500,
         origin:'left',
-        distance: '1000px',
+        distance: '100px',
         reset: true,
     });
     sr.reveal('.contenido_inicio a', {
         duration: 1500,
-        origin:'right',
-        distance: '500px',
+        origin:'left',
+        distance: '5px',
         reset: true,
     });
     sr.reveal('.form-inline', {
@@ -26,19 +26,19 @@ window.sr =ScrollReveal();
     sr.reveal('.btn_downTwo', {
         duration: 1500,
         origin:'left',
-        distance: '500px',
+        distance: '50px',
         reset: true,
     });
     sr.reveal('.container_derObjetivos', {
-        duration: 1500,
-        origin:'right',
-        distance: '500px',
+        duration: 2500,
+        origin:'left',
+        distance: '200px',
         reset: true,
     });
     sr.reveal('.container_izqObjetivos', {
-        duration: 1500,
+        duration: 2000,
         origin:'left',
-        distance: '500px',
+        distance: '150px',
         reset: true,
     });
     sr.reveal('.h2', {
