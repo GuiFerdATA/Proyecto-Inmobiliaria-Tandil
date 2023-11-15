@@ -275,6 +275,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
+    width: 100%;
 }
 
 .btn_downTree {
@@ -284,6 +285,7 @@ body {
     text-decoration: none;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .btn_downTree>i {
@@ -521,5 +523,30 @@ body {
         font-size: 33px;
         margin-left: 50px;
     }
-}
+    .contacto .fila {
+        display: block;
+    }
+
+    .contacto .fila .col {
+        width: 100%;
+    }
+
+    .contacto button {
+        width: 100px;
+    }
+
+    .contacto .col img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .contacto .col .info {
+        position: absolute;
+        top: 50%;
+        background-color: #3f4042;
+        padding: 20px;
+        width: 300px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
