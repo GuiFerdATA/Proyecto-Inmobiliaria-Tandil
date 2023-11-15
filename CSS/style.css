@@ -121,13 +121,14 @@ body {
 
 .spanInmobiliaria {
     color: rgb(249, 183, 0);
-   
+
 }
 
 .spanTandil {
     color: rgb(249, 183, 0);
 }
-.spanPorDia{
+
+.spanPorDia {
     animation: teclear 2.4s steps(80) infinite;
 }
 
@@ -287,6 +288,7 @@ body {
 .btn_downTree:hover {
     color: #198754;
 }
+
 /* SECCION CONTACTO */
 
 .svgContacto {
@@ -296,6 +298,7 @@ body {
     width: 100%;
     height: auto;
 }
+
 .contacto {
     scroll-margin: 3.5em;
     background-color: #ffffff;
@@ -311,7 +314,7 @@ body {
 
 }
 
-.contacto h4 {
+.contacto h3 {
     color: rgb(249, 183, 0);
     font-family: 'Outfit', sans-serif;
     font-size: 50px;
@@ -354,8 +357,8 @@ body {
 
 .contacto button {
     cursor: pointer;
-    background-color:#1AA3FF ;
-    border: 2px solid #1AA3FF;
+    background-color: #1AA3FF;
+    border: 2px solid #A2D9FF ;
     width: 350px;
     display: block;
     margin: 0px auto;
@@ -391,6 +394,52 @@ body {
     color: #1AA3FF;
     display: inline-block;
     margin-right: 20px;
+}
+
+/* FOOTER */
+footer {
+    background-color:#1AA3FF;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    position: absolute;
+    margin-top: 953px;
+    width: 100%;
+}
+
+footer .redes {
+    margin-bottom: 10px;
+}
+
+footer .redes a {
+    color:#ffffff;
+    border: 1.7px solid #A2D9FF;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 5px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+footer .arriba {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color:#1AA3FF;
+    border: 1.7px solid #ffffff;
+    color: #ffffff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10%;
+    border-radius: 50px;
+    line-height: 50px;
+    font-size: 18px;
 }
 
 
@@ -452,7 +501,7 @@ body {
     .container_derObjetivos p {
         font-size: 16px;
         width: 75%;
-       
+
     }
 
     .container_izqObjetivos p {
@@ -516,6 +565,7 @@ body {
         font-size: 33px;
         margin-left: 50px;
     }
+
     .contacto .fila {
         display: block;
     }

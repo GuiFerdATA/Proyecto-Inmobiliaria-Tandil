@@ -51,5 +51,16 @@ window.sr =ScrollReveal();
         duration: 3000,
         opacity: 0,
     });
-
+    sr.reveal('.h3', {
+        duration: 1500,
+        origin:'bottom',
+        distance: '150px',
+        reset: true,
+    });
+    sr.reveal('.col', {
+        duration: 1500,
+        origin:'left',
+        distance: '150px',
+        reset: true,
+    });
     
