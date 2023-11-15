@@ -235,15 +235,6 @@ body {
 }
 
 
-.container_izqObjetivos h3 {
-    font-size: 40px;
-    font-family: 'Outfit', sans-serif;
-    letter-spacing: 0.2em;
-    color: #198754;
-    text-align: center;
-}
-
-
 .container_izqObjetivos p {
     font-size: 20px;
     margin-top: 70px;
@@ -251,6 +242,7 @@ body {
     color: #1E2D3B;
     font-family: 'Open Sans', sans-serif;
     margin-left: 50px;
+    padding: 100px;
 }
 
 .container_derObjetivos {
@@ -460,6 +452,7 @@ body {
     .container_derObjetivos p {
         font-size: 16px;
         width: 75%;
+       
     }
 
     .container_izqObjetivos p {
@@ -549,4 +542,4 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
+}
