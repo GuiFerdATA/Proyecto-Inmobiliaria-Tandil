@@ -243,7 +243,7 @@ body {
     color: #1E2D3B;
     font-family: 'Open Sans', sans-serif;
     margin-left: 50px;
-    padding: 100px;
+    padding: 90px;
 }
 
 .container_derObjetivos {
@@ -507,6 +507,7 @@ footer .arriba {
     .container_izqObjetivos p {
         font-size: 17px;
         margin-top: 40px;
+        padding: 35px;
     }
 
     .container_objetivo h2 {
