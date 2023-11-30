@@ -73,8 +73,11 @@ body {
     text-decoration: none;
     padding: 8px;
     border-radius: 20px;
+    transition: .5s;
 }
-
+.contenedor_header header nav ul li a:hover {
+    color: #FABE1A;
+}
 .nav-responsive {
     color: #F9B700;
     font-size: 30px;
