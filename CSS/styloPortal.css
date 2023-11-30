@@ -139,6 +139,10 @@ body {
     display: inline-block;
     transition: all 0.3s ease-in-out;
 }
+.resultado-card a{
+    text-decoration: none;
+    list-style: none;
+}
 
 .resultado-card:hover {
     transform: scale(1.03)

@@ -96,6 +96,9 @@ document.addEventListener("DOMContentLoaded", function () {
             <p>Patio: ${propiedad.patio}</p>
             <p>Ubicación: ${propiedad.ubicación}</p>
             <p>Precio: $${propiedad.precio}</p>
+            <a href="https://wa.me/${propiedad.telefono}" target="_blank">-WhatsApp-</a>
+
+
           </div>
         `;
       });
@@ -144,6 +147,8 @@ document.addEventListener("DOMContentLoaded", function () {
           <p>Patio: ${propiedad.patio}</p>
           <p>Ubicación: ${propiedad.ubicación}</p>
           <p>Precio: $${propiedad.precio}</p>
+          <a href="https://wa.me/${propiedad.telefono}" target="_blank">-WhatsApp-</a>
+
         </div>
       `;
     });

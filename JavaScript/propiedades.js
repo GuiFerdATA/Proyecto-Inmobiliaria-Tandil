@@ -11,7 +11,8 @@ const propiedades = [
     img1: "../IMG/portada.jpeg",
     img2: "../IMG/portada.jpeg",
     img3: "../IMG/portada.jpeg",
-    img4: "../IMG/portada.jpeg"
+    img4: "../IMG/portada.jpeg",
+    telefono: 1122334455
 
   },
   {
@@ -26,7 +27,9 @@ const propiedades = [
     img1: "../IMG/portada.jpeg",
     img2: "../IMG/portada.jpeg",
     img3: "../IMG/portada.jpeg",
-    img4: "../IMG/portada.jpeg"
+    img4: "../IMG/portada.jpeg",
+    telefono: 112233445566
+
   },
   {
     id: 3,
@@ -40,7 +43,9 @@ const propiedades = [
     img1: "../IMG/portada.jpeg",
     img2: "../IMG/portada.jpeg",
     img3: "../IMG/portada.jpeg",
-    img4: "../IMG/portada.jpeg"
+    img4: "../IMG/portada.jpeg",
+    telefono: 112233445566
+
   },
   {
     id: 4,
@@ -54,7 +59,9 @@ const propiedades = [
     img1: "../IMG/portada.jpeg",
     img2: "../IMG/portada.jpeg",
     img3: "../IMG/portada.jpeg",
-    img4: "../IMG/portada.jpeg"
+    img4: "../IMG/portada.jpeg",
+    telefono: 112233445566
+
   },
   {
     id: 5,
@@ -68,7 +75,9 @@ const propiedades = [
     img1: "../IMG/portada.jpeg",
     img2: "../IMG/portada.jpeg",
     img3: "../IMG/portada.jpeg",
-    img4: "../IMG/portada.jpeg"
+    img4: "../IMG/portada.jpeg",
+    telefono: 112233445566
+
   },
   {
     id: 6,
@@ -82,7 +91,9 @@ const propiedades = [
     img1: "../IMG/portada.jpeg",
     img2: "../IMG/portada.jpeg",
     img3: "../IMG/portada.jpeg",
-    img4: "../IMG/portada.jpeg"
+    img4: "../IMG/portada.jpeg",
+    telefono: 112233445566
+
   },
   {
     id: 7,
@@ -96,7 +107,9 @@ const propiedades = [
     img1: "../IMG/portada.jpeg",
     img2: "../IMG/portada.jpeg",
     img3: "../IMG/portada.jpeg",
-    img4: "../IMG/portada.jpeg"
+    img4: "../IMG/portada.jpeg",
+    telefono: 112233445566
+
   },
   {
     id: 8,
@@ -110,7 +123,9 @@ const propiedades = [
     img1: "../IMG/portada.jpeg",
     img2: "../IMG/portada.jpeg",
     img3: "../IMG/portada.jpeg",
-    img4: "../IMG/portada.jpeg"
+    img4: "../IMG/portada.jpeg",
+    telefono: 112233445566
+
   },
   {
     id: 9,
@@ -124,7 +139,9 @@ const propiedades = [
     img1: "../IMG/portada.jpeg",
     img2: "../IMG/portada.jpeg",
     img3: "../IMG/portada.jpeg",
-    img4: "../IMG/portada.jpeg"
+    img4: "../IMG/portada.jpeg",
+    telefono: 112233445566
+
 
   },
   {
@@ -139,7 +156,9 @@ const propiedades = [
     img1: "../IMG/portada.jpeg",
     img2: "../IMG/portada.jpeg",
     img3: "../IMG/portada.jpeg",
-    img4: "../IMG/portada.jpeg"
+    img4: "../IMG/portada.jpeg",
+    telefono: 112233445566
+
   },
   {
     id: 11,
@@ -153,7 +172,9 @@ const propiedades = [
     img1: "../IMG/portada.jpeg",
     img2: "../IMG/portada.jpeg",
     img3: "../IMG/portada.jpeg",
-    img4: "../IMG/portada.jpeg"
+    img4: "../IMG/portada.jpeg",
+    telefono: 112233445566
+
   },
   {
     id: 12,
@@ -167,7 +188,10 @@ const propiedades = [
     img1: "../IMG/portada.jpeg",
     img2: "../IMG/portada.jpeg",
     img3: "../IMG/portada.jpeg",
-    img4: "../IMG/portada.jpeg"  },
+    img4: "../IMG/portada.jpeg",
+    telefono: 112233445566
+
+  },
 
   {
     id: 13,
@@ -181,7 +205,9 @@ const propiedades = [
     img1: "../IMG/portada.jpeg",
     img2: "../IMG/portada.jpeg",
     img3: "../IMG/portada.jpeg",
-    img4: "../IMG/portada.jpeg"
+    img4: "../IMG/portada.jpeg",
+    telefono: 112233445566
+
   },
   {
     id: 14,
@@ -195,7 +221,9 @@ const propiedades = [
     img1: "../IMG/portada.jpeg",
     img2: "../IMG/portada.jpeg",
     img3: "../IMG/portada.jpeg",
-    img4: "../IMG/portada.jpeg"
+    img4: "../IMG/portada.jpeg",
+    telefono: 112233445566
+
   },
   {
     id:15 ,
@@ -209,7 +237,9 @@ const propiedades = [
     img1: "../IMG/portada.jpeg",
     img2: "../IMG/portada.jpeg",
     img3: "../IMG/portada.jpeg",
-    img4: "../IMG/portada.jpeg"
+    img4: "../IMG/portada.jpeg",
+    telefono: 112233445566
+
   },
   {
     id:16 ,
@@ -223,7 +253,9 @@ const propiedades = [
     img1: "../IMG/portada.jpeg",
     img2: "../IMG/portada.jpeg",
     img3: "../IMG/portada.jpeg",
-    img4: "../IMG/portada.jpeg"
+    img4: "../IMG/portada.jpeg",
+    telefono: 112233445566
+
   },
   {
     id:17,
@@ -237,7 +269,9 @@ const propiedades = [
     img1: "../IMG/portada.jpeg",
     img2: "../IMG/portada.jpeg",
     img3: "../IMG/portada.jpeg",
-    img4: "../IMG/portada.jpeg"
+    img4: "../IMG/portada.jpeg",
+    telefono: 112233445566
+
   },
   {
     id:18,
@@ -251,7 +285,9 @@ const propiedades = [
     img1: "../IMG/portada.jpeg",
     img2: "../IMG/portada.jpeg",
     img3: "../IMG/portada.jpeg",
-    img4: "../IMG/portada.jpeg"
+    img4: "../IMG/portada.jpeg",
+    telefono: 112233445566
+
   },
   {
     id:19,
@@ -265,7 +301,9 @@ const propiedades = [
     img1: "../IMG/portada.jpeg",
     img2: "../IMG/portada.jpeg",
     img3: "../IMG/portada.jpeg",
-    img4: "../IMG/portada.jpeg"
+    img4: "../IMG/portada.jpeg",
+    telefono: 112233445566
+
   },
   {
     id:20,
@@ -279,7 +317,9 @@ const propiedades = [
     img1: "../IMG/portada.jpeg",
     img2: "../IMG/portada.jpeg",
     img3: "../IMG/portada.jpeg",
-    img4: "../IMG/portada.jpeg"
+    img4: "../IMG/portada.jpeg",
+    telefono: 112233445566
+
   },
   
 
