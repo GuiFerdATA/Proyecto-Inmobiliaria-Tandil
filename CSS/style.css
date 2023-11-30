@@ -383,6 +383,8 @@ body {
 
 .contacto .col .info ul {
     list-style: none;
+    background-color: rgba(247, 246, 241, 0.076);
+    backdrop-filter: blur(4px);
 }
 
 .contacto .col .info ul li {
