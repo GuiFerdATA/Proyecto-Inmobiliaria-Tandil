@@ -17,39 +17,36 @@ window.addEventListener('load', function () {
 
 /*nav responsive */
 const navResponsive = document.querySelector('.nav-responsive');
-const nav = document.querySelector('nav');
 
 let menuVisible = false;
 
 navResponsive.addEventListener('click', () => {
+  const navElement = document.getElementById("nav");
+
   if (menuVisible) {
-    document.getElementById("nav").classList = "";
+    navElement.classList = "";
     menuVisible = false;
   } else {
-    document.getElementById("nav").classList = "responsive";
+    navElement.classList = "responsive";
     menuVisible = true;
   }
 });
 
+// Obtén todos los elementos de menú dentro del menú desplegable
+const menuItems = document.querySelectorAll('nav');
 
-/* hover nav */
-const $enlacesMenu = document.querySelectorAll('.contenedor_header ul li a')
-
-$enlacesMenu.forEach((items) => {
-  items.addEventListener('mouseenter', () => {
-    items.style.backgroundColor = 'rgb(249, 183, 0)'
+// Agrega un evento de clic a cada elemento de menú
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener('click', () => {
+    // Oculta el menú al hacer clic en un elemento de menú
+    document.getElementById("nav").classList = "";
+    menuVisible = false;
   });
-  items.addEventListener('mouseleave', () => {
-    items.style.backgroundColor = ''
-  })
 });
 
 
 
 /* filtrado de búsqueda */
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(window.location.search);
   const busqueda = urlParams.get("busqueda");
