@@ -468,7 +468,7 @@ footer .arriba {
         position: absolute;
         right: 0px;
         top: 75px;
-        background-color: rgba(44, 108, 151, 0.95);
+        background-color: rgb(44, 108, 151);
         backdrop-filter: blur(15px);
         text-align: center;
         width: 100%;

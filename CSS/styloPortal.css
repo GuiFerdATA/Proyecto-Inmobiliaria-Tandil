@@ -34,9 +34,10 @@ body {
     background: url('../IMG/carga.gif') 50% 50% no-repeat rgb(249, 249, 249);
 }
 
+
 .contenedor_header {
     background: transparent;
-    width: 100%;
+    min-width: 100%;
     top: 0;
     left: 0;
     z-index: 99;
@@ -78,10 +79,11 @@ body {
 .contenedor_header header nav ul li a:hover {
     color: #FABE1A;
 }
+
 .nav-responsive {
     color: #F9B700;
-    font-size: 30px;
-    padding: 15spx 15px;
+    font-size: 35px;
+    padding: 15px 15px;
     border-radius: 5px;
     cursor: pointer;
     display: none;
@@ -242,46 +244,47 @@ footer .arriba {
 /*media query*/
 @media screen and (max-width: 998px) {
 
+   /*SECCION NAV*/
+   nav {
+    display: none;
+}
 
-    /*SECCION NAV*/
-    nav {
-        display: none;
-    }
+.nav-responsive {
+    display: block;
+}
 
-    .nav-responsive {
-        display: block;
-    }
+nav.responsive {
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 75px;
+    background-color: rgb(44, 108, 151);
+    backdrop-filter: blur(15px);
+    text-align: center;
+    width: 100%;
+    height:300px;
+    opacity:0.9;
+    transition: all .5s;
+}
 
-    nav.responsive {
-        display: block;
-        position: absolute;
-        right: 0px;
-        top: 75px;
-        background-color: rgba(44, 108, 151, 0.95);
-        backdrop-filter: blur(5px);
-        text-align: center;
-        width: 100%;
-        height:300px;
-        opacity:0.9;
-        transition: all .5s;
-    }
+nav.responsive ul {
+    display: block !important;
+    
+}
 
-    nav.responsive ul {
-        display: block !important;
-    }
+nav.responsive ul li {
+    padding: 10px;
 
-    nav.responsive ul li {
-        padding: 10px;
+}
 
-    }
+.contenedor_header header nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(8, 8, 8);
+    font-size: 23px;
 
-    .contenedor_header header nav ul li a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: rgb(8, 8, 8);
-        font-size: 23px;
+}
 
-    }
 
 }
