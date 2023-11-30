@@ -17,7 +17,6 @@ window.addEventListener('load', function () {
 
 /*nav responsive */
 const navResponsive = document.querySelector('.nav-responsive');
-
 let menuVisible = false;
 
 navResponsive.addEventListener('click', () => {
@@ -31,10 +30,8 @@ navResponsive.addEventListener('click', () => {
     menuVisible = true;
   }
 });
-
 // Obtén todos los elementos de menú dentro del menú desplegable
 const menuItems = document.querySelectorAll('nav');
-
 // Agrega un evento de clic a cada elemento de menú
 menuItems.forEach((menuItem) => {
   menuItem.addEventListener('click', () => {
