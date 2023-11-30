@@ -237,12 +237,11 @@ body {
 
 
 .container_izqObjetivos p {
-    font-size: 20px;
+    font-size: 19px;
     margin-top: 70px;
     letter-spacing: 0.1em;
     color: #1E2D3B;
     font-family: 'Open Sans', sans-serif;
-    margin-left: 50px;
     padding: 90px;
 }
 
@@ -256,7 +255,7 @@ body {
 }
 
 .container_derObjetivos p {
-    font-size: 20px;
+    font-size: 19px;
     margin-bottom: 10px;
     letter-spacing: 0.1em;
     color: #0b0b0b;
@@ -499,15 +498,15 @@ footer .arriba {
 
     /*objetivos*/
     .container_derObjetivos p {
-        font-size: 16px;
+        font-size: 14.5px;
         width: 75%;
 
     }
 
     .container_izqObjetivos p {
-        font-size: 17px;
+        font-size: 15px;
         margin-top: 40px;
-        padding: 35px;
+        padding: 70px;
     }
 
     .container_objetivo h2 {
@@ -546,15 +545,21 @@ footer .arriba {
     }
 
     /*objetivos*/
+.container_derObjetivos {
+    margin-right: 0px;
+}
 
     .container_derObjetivos p {
-        font-size: 13px;
-        width: 63%;
+        font-size: 14px;
+        width:83%;
         margin-top: 20px;
     }
 
     .container_izqObjetivos p {
-        font-size: 13px;
+        font-size: 14px;
+        width: 100%;
+        padding: 40px;
+
         margin-top: 40px;
     }
 
@@ -575,9 +580,7 @@ footer .arriba {
         width: 100%;
     }
 
-    .contacto button {
-        width: 100px;
-    }
+
 
     .contacto .col img {
         width: 100%;
@@ -587,10 +590,13 @@ footer .arriba {
     .contacto .col .info {
         position: absolute;
         top: 50%;
-        background-color: #3f4042;
         padding: 20px;
         width: 300px;
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    footer {
+        margin-top: 1272px;
+    }
+
 }
