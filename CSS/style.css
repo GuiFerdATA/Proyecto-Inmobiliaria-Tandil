@@ -242,7 +242,6 @@ body {
 
 .container_izqObjetivos p {
     font-size: 19px;
-    margin-top: 70px;
     letter-spacing: 0.1em;
     color: #1E2D3B;
     font-family: 'Open Sans', sans-serif;
@@ -261,6 +260,7 @@ body {
 .container_derObjetivos p {
     font-size: 19px;
     margin-bottom: 10px;
+    margin-top: 20px;
     letter-spacing: 0.1em;
     color: #0b0b0b;
     width: 85%;
@@ -277,12 +277,12 @@ body {
 
 .btn_downTree {
     color: #0099ff;
-    margin-top: 25px;
     font-size: 15px;
     text-decoration: none;
     display: flex;
     flex-direction: column;
     position: relative;
+    transition: .5s;
 }
 
 .btn_downTree>i {
@@ -290,7 +290,7 @@ body {
 }
 
 .btn_downTree:hover {
-    color: #198754;
+    color: #FABE1A;
 }
 
 /* SECCION CONTACTO */
