@@ -613,3 +613,35 @@ footer .arriba {
     }
 
 }
+
+@media (max-width: 501px) {
+    .contenido_inicio h1 {
+        font-size: 40px;
+    }
+    .container_objetivo h2 {
+        font-size: 40px;
+    }
+    .contacto h3{
+        font-size: 40px;
+    }
+    .container_derObjetivos p {
+        font-size: 10px;
+        width:83%;
+        margin-top: 20px;
+    }
+
+    .container_izqObjetivos p {
+        font-size: 10px;
+        width: 100%;
+        padding: 40px;
+        margin-top: 40px;
+    }
+    .container_izqObjetivos {
+        margin-left: 10px;
+
+    }
+    .contacto button {
+        width: auto;
+    }
+
+}
